@@ -1,0 +1,76 @@
+body{
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 30px;
+}
+
+.thumbnail{
+  background: transparent;
+}
+.form-wrap {
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+form{text-align: center;}
+#combobox{width: 100%;}
+#number{width: 100%;}
+#tituloLibro{margin-top: 20px;}
+/*TABLAS*/
+a .boton{height:30px;font-size:12px;padding-left:8px; padding-right:8px;}
+.tbl{width:100%;}
+h3{padding-top: 15px;padding-bottom: 20px;}
+#link{color: black;}
+#cla{text-align: center;}
+#char{color:#A4A4A4;}
+#pag{ color: black;}
+#agregar{margin-bottom: 20px;}
+#contenido{margin-top: 10px;padding-top: 10px;}
+#lista{padding-bottom: 5px;}
+#lista_paginate{text-align: center; margin-top: 2%; }
+/*diseño de fuentes y botones*/
+
+a{
+    margin: 4px;
+}
+
+#tipo{
+    font-family: 'Courgette', cursive;
+    margin: 30px;
+    font-size: 70px;
+    text-align: center;
+}
+
+b{
+  color: #FFFFFF;
+}
+
+button {
+
+ border: none;
+ background: #BDBDBD;
+ color: #f2f2f2;
+ padding: 5px;
+ font-size: 18px;
+ color:#FFFFFF;
+ border-radius: 5px;
+ position: relative;
+ box-sizing: border-box;
+ transition: all 500ms ease;
+}
+
+button:hover {
+ background: rgba(0,0,0,0);
+ color: #FFFFFF;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.copyright {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
