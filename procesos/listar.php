@@ -298,7 +298,6 @@ switch($tabla){
                     <th>Boleta de pago</th>
                     <th>Mes</th>
                     <th>Año</th>
-                    <th style="text-align: center;">Acciones</th>
                 </tr>
             </thead><tbody>';
 
@@ -311,20 +310,6 @@ switch($tabla){
                     <td><a href=".$fila['Boleta de pago']." target='_blank'><img src=".$fila['Boleta de pago']." style='width:100px;height:100px;'></a></td>
                     <td>".$fila['Mes']."</td>
                     <td>".$fila['Año']."</td>
-                    <td  style='text-align:center;'>
-                        <a href='tblCita.php?accion=aprobar&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-success boton' id='btnAprobar'>Aprobar</button>
-                        </a>
-                        <a href='tblCita.php?accion=denegar&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-danger boton' id='btnDenegar'>Denegar</button>
-                        </a>
-                        <a data-toggle='confirmation' data-title='¿Está seguro de resolver este registro?' data-btn-ok-label='Si'
-                        data-btn-ok-icon='fa fa-check' data-btn-ok-class='btn-success'
-                        data-btn-cancel-label='No' data-btn-cancel-icon='fa fa-close'
-                        data-btn-cancel-class='btn-danger' href='tblCita.php?accion=resolver&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-warning boton' id='btnResolver' >Resolver</button>
-                        </a>
-                    </td>
                 </tr> ";
             }//Fin while
             print "
@@ -344,7 +329,6 @@ switch($tabla){
                     <th>Boleta de pago</th>
                     <th>Mes</th>
                     <th>Año</th>
-                    <th style="text-align: center;">Acciones</th>
                 </tr>
             </thead><tbody>';
 
@@ -357,20 +341,6 @@ switch($tabla){
                     <td><a href=".$fila['Boleta de pago']." target='_blank'><img src=".$fila['Boleta de pago']." style='width:100px;height:100px;'></a></td>
                     <td>".$fila['Mes']."</td>
                     <td>".$fila['Año']."</td>
-                    <td  style='text-align:center;'>
-                        <a href='tblCita.php?accion=aprobar&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-success boton' id='btnAprobar'>Aprobar</button>
-                        </a>
-                        <a href='tblCita.php?accion=denegar&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-danger boton' id='btnDenegar'>Denegar</button>
-                        </a>
-                        <a data-toggle='confirmation' data-title='¿Está seguro de resolver este registro?' data-btn-ok-label='Si'
-                        data-btn-ok-icon='fa fa-check' data-btn-ok-class='btn-success'
-                        data-btn-cancel-label='No' data-btn-cancel-icon='fa fa-close'
-                        data-btn-cancel-class='btn-danger' href='tblCita.php?accion=resolver&hCodigo=".$fila['Código']."'>
-                        <button type='submit' class='btn btn-warning boton' id='btnResolver' >Resolver</button>
-                        </a>
-                    </td>
                 </tr> ";
             }//Fin while
             print "

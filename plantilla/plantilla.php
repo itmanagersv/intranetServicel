@@ -45,7 +45,7 @@ class plantilla{
         </head>
         
         <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top barra" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -55,29 +55,36 @@ class plantilla{
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="../index.php">Inicio  <span class="fa fa-home"></a>
-            </div>
+                </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../forms/frmSolicitud.php">Solicitud de solvencias</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solicitudes  <span class="fa fa-book"></span><strong class="caret"></strong></a>
+                        <ul class="dropdown-menu" style="background:#1C1C1C;">
+                            <li>
+                                <a id="char" href="../forms/frmSolicitud.php">Solicitud de constancias <span></span></a>
+                            </li>
+                            <li>
+                                <a id="char" href="../forms/frmCita.php">Solicitud de cita con RRHH <span></span></a>
+                            </li>
+                            <li>
+                                <a id="char" href="../forms/frmMaterial.php">Solicitud materiales <span></span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver  <span class="fa fa-eye"></span><strong class="caret"></strong></a>
+                        <ul class="dropdown-menu" style="background:#1C1C1C;">
+                            <li>
+                                <a id="char" href="../forms/tblCita.php">Estado de solicitud  <span></span></a>
+                            </li>
+                            <li>
+                                <a id="char" href="../forms/tblBoleta.php">Boleta de pago  <span></span></a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../forms/frmCita.php">Solicitar cita con RRHH</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../forms/tblCita.php">Ver mis solicitudes</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="../forms/frmMaterial.php">Solicitar suplementos de oficina</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav pull-right">
                     <li>
                         <a href="#">'.$this->user.'</a>
                     </li>
