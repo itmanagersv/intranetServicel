@@ -71,7 +71,7 @@ class plantilla{
                 <!-- Header -->
                 <header class="masthead bg-primary text-white text-center">
                 <div class="container">
-                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/002-computer-2.svg" alt="" style="height: 100px">
+                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/computadora.svg" alt="" style="height: 100px">
                     <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                     <hr class="star-light">
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
@@ -86,7 +86,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmSolicitud.php">
                                     <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                        <img src="img/svg/002-printer.svg">
+                                        <img src="img/svg/impresor.svg">
                                             <br>
                                             <b>Solicitud de documentos</b>
                                     </button>
@@ -98,7 +98,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblSolicitud.php">
                                     <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
-                                        <img src="img/svg/006-letter.svg">
+                                        <img src="img/svg/listado.svg">
                                             <br>
                                             <b>Resumen de solicitudes</b>
                                     </button>
@@ -110,7 +110,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmCita.php">
                                     <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                        <img src="img/svg/003-clock.svg">
+                                        <img src="img/svg/reunion.svg">
                                             <br>
                                             <b>Cita con RRHH</b>
                                     </button>
@@ -122,7 +122,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblCita.php">
                                     <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                        <img src="img/svg/001-calendar.svg">
+                                        <img src="img/svg/calendario.svg">
                                             <br>
                                             <b>Resumen de citas</b>
                                     </button>
@@ -138,7 +138,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmMaterial.php">
                                     <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                        <img src="img/svg/007-tape.svg">
+                                        <img src="img/svg/clips.svg">
                                             <br>
                                             <b>Solicitud material de oficina</b>
                                     </button>
@@ -150,7 +150,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblSolSup.php">
                                     <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
-                                        <img src="img/svg/005-copy.svg">
+                                        <img src="img/svg/tareas.svg">
                                             <br>
                                             <b>Resumen solicitud suplementos</b>
                                     </button>
@@ -161,10 +161,10 @@ class plantilla{
                         <div class="col-sm-4 col-lg-3 col-md-3">
                             <div class="thumbnail">
                                 <a href="forms/frmBoleta.php">
-                                    <button style="width:98%;" type="button" title="Boleta de pago" '.$disabled.'>
-                                        <img src="img/svg/004-id-card.svg">
+                                    <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
+                                        <img src="img/svg/subir.svg">
                                             <br>
-                                            <b>Boleta de pago</b>
+                                            <b>Subir boleta de pago</b>
                                     </button>
                                 </a>
                             </div><!--end class thumbnail-->
@@ -174,14 +174,33 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblBoleta.php">
                                     <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
-                                        <img src="img/svg/008-money.svg">
+                                        <img src="img/svg/pago.svg">
                                             <br>
                                             <b>Ver boletas de pago</b>
                                     </button>
                                 </a>
                             </div><!--end class thumbnail-->
                         </div><!--end size-->
-                    </div><!--end class row-->    
+                        
+                    </div><!--end class row-->
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-sm-4 col-lg-3 col-md-3">
+                            <div class="thumbnail">
+                                <a href="forms/tblUsuario.php">
+                                    <button style="width:98%;" type="button" title="Mantenimientos usuarios" '.$disabled.'>
+                                        <img src="img/svg/usuarios.svg">
+                                            <br>
+                                            <b>Mantenimiento usuarios</b>
+                                    </button>
+                                </a>
+                            </div><!--end class thumbnail-->
+                        </div><!--end size-->
+
+                    </div><!--end class row-->                       
             
                 </div><!--end class container-->
                 </section>
@@ -238,7 +257,7 @@ class plantilla{
                 <!-- Header -->
                 <header class="masthead bg-primary text-white text-center">
                 <div class="container">
-                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/002-computer-2.svg" alt="" style="height: 100px">
+                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/computadora.svg" alt="" style="height: 100px">
                     <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                     <hr class="star-light">
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
@@ -253,7 +272,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmSolicitud.php">
                                     <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                        <img src="img/svg/002-printer.svg">
+                                        <img src="img/svg/impresor.svg">
                                             <br>
                                             <b>Solicitud de documentos</b>
                                     </button>
@@ -265,7 +284,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblSolicitud.php">
                                     <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
-                                        <img src="img/svg/006-letter.svg">
+                                        <img src="img/svg/listado.svg">
                                             <br>
                                             <b>Resumen de solicitudes</b>
                                     </button>
@@ -277,7 +296,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmCita.php">
                                     <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                        <img src="img/svg/003-clock.svg">
+                                        <img src="img/svg/reunion.svg">
                                             <br>
                                             <b>Cita con RRHH</b>
                                     </button>
@@ -289,7 +308,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblCita.php">
                                     <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                        <img src="img/svg/001-calendar.svg">
+                                        <img src="img/svg/calendario.svg">
                                             <br>
                                             <b>Resumen de citas</b>
                                     </button>
@@ -305,7 +324,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/frmMaterial.php">
                                     <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                        <img src="img/svg/007-tape.svg">
+                                        <img src="img/svg/clips.svg">
                                             <br>
                                             <b>Solicitud material de oficina</b>
                                     </button>
@@ -317,7 +336,7 @@ class plantilla{
                             <div class="thumbnail">
                                 <a href="forms/tblSolSup.php">
                                     <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
-                                        <img src="img/svg/005-copy.svg">
+                                        <img src="img/svg/tareas.svg">
                                             <br>
                                             <b>Resumen solicitud suplementos</b>
                                     </button>
@@ -327,11 +346,11 @@ class plantilla{
             
                         <div class="col-sm-4 col-lg-3 col-md-3">
                             <div class="thumbnail">
-                                <a href="forms/tblLibros.php">
-                                    <button style="width:98%;" type="button" title="Boleta de pago" '.$disabled.'>
-                                        <img src="img/svg/004-id-card.svg">
+                                <a href="forms/frmBoleta.php">
+                                    <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
+                                        <img src="img/svg/subir.svg">
                                             <br>
-                                            <b>Boleta de pago</b>
+                                            <b>Subir boleta de pago</b>
                                     </button>
                                 </a>
                             </div><!--end class thumbnail-->
@@ -339,20 +358,21 @@ class plantilla{
             
                         <div class="col-sm-4 col-lg-3 col-md-3">
                             <div class="thumbnail">
-                                <a href="forms/tblLibros.php">
-                                    <button style="width:98%;" type="button" title="Solicitud equipo de oficina" '.$disabled.'>
-                                        <img src="img/svg/008-money.svg">
+                                <a href="forms/tblBoleta.php">
+                                    <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
+                                        <img src="img/svg/pago.svg">
                                             <br>
-                                            <b>Solicitud equipo de oficina</b>
+                                            <b>Ver boletas de pago</b>
                                     </button>
                                 </a>
                             </div><!--end class thumbnail-->
                         </div><!--end size-->
-                    </div><!--end class row-->    
+                        
+                    </div><!--end class row-->                      
             
                 </div><!--end class container-->
                 </section>
-            
+
                 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
                 <div class="scroll-to-top d-lg-none position-fixed ">
                 <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -420,7 +440,7 @@ class plantilla{
                                 <div class="thumbnail">
                                     <a href="forms/frmSolicitud.php">
                                         <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                            <img src="img/svg/002-printer.svg">
+                                            <img src="img/svg/impresor.svg">
                                                 <br>
                                                 <b>Solicitud de documentos</b>
                                         </button>
@@ -432,7 +452,7 @@ class plantilla{
                                 <div class="thumbnail">
                                     <a href="forms/frmCita.php">
                                         <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                            <img src="img/svg/003-clock.svg">
+                                            <img src="img/svg/reunion.svg">
                                                 <br>
                                                 <b>Cita con RRHH</b>
                                         </button>
@@ -443,10 +463,10 @@ class plantilla{
                             <div class="col-sm-4 col-lg-3 col-md-3">
                                 <div class="thumbnail">
                                     <a href="forms/tblCita.php">
-                                        <button style="width:98%;" type="button" title="Estado de citas con RRHH" '.$disabled.'>
-                                            <img src="img/svg/001-calendar.svg">
+                                        <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
+                                            <img src="img/svg/calendario.svg">
                                                 <br>
-                                                <b>Estado de citas con RRHH</b>
+                                                <b>Resumen de citas</b>
                                         </button>
                                     </a>
                                 </div><!--end class thumbnail-->
@@ -455,8 +475,8 @@ class plantilla{
                             <div class="col-sm-4 col-lg-3 col-md-3">
                                 <div class="thumbnail">
                                     <a href="forms/frmMaterial.php">
-                                        <button style="width:98%;" type="button" title="Solicitud material de oficina" '.$disabled.'>
-                                            <img src="img/svg/007-tape.svg">
+                                        <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
+                                            <img src="img/svg/clips.svg">
                                                 <br>
                                                 <b>Solicitud material de oficina</b>
                                         </button>
@@ -466,8 +486,22 @@ class plantilla{
 
                         </div><!--end class row-->
                 
-                        <br> 
+                        <br>
                 
+                        <div class="row">
+                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                <div class="thumbnail">
+                                    <a href="forms/tblBoleta.php">
+                                        <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
+                                            <img src="img/svg/pago.svg">
+                                                <br>
+                                                <b>Ver boletas de pago</b>
+                                        </button>
+                                    </a>
+                                </div><!--end class thumbnail-->
+                            </div><!--end size-->
+                            
+                        </div><!--end class row-->                
                     </div><!--end class container-->
                     </section>
                 
@@ -496,7 +530,7 @@ class plantilla{
                 </body>';    
         }else{
             $disabled = '';
-            if ($this->user == 'Iniciar Sesión'){ $disabled = 'disabled="true"'; }
+            if ($this->user == 'Iniciar Sesión'){ $disabled = 'disabled="false"'; }
             print '<body id="page-top">
 
                 <!-- Navigation -->
@@ -536,105 +570,16 @@ class plantilla{
                     <div class="row">
                         <div class="col-sm-4 col-lg-3 col-md-3">
                             <div class="thumbnail">
-                                <a href="forms/frmSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                        <img src="img/svg/002-printer.svg">
+                                <a href="forms/frmLogin.php">
+                                    <button style="width:98%;" type="button" title="Iniciar sesión" '.$disabled.'>
+                                        <img src="img/svg/usuarios.svg">
                                             <br>
-                                            <b>Solicitud de documentos</b>
+                                            <b>Iniciar sesión</b>
                                     </button>
                                 </a>
                             </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
-                                        <img src="img/svg/006-letter.svg">
-                                            <br>
-                                            <b>Resumen de solicitudes</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmCita.php">
-                                    <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                        <img src="img/svg/003-clock.svg">
-                                            <br>
-                                            <b>Cita con RRHH</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblCita.php">
-                                    <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                        <img src="img/svg/001-calendar.svg">
-                                            <br>
-                                            <b>Resumen de citas</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
+                        </div><!--end size-->   
                     </div><!--end class row-->
-            
-                    <br>
-            
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmMaterial.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                        <img src="img/svg/007-tape.svg">
-                                            <br>
-                                            <b>Solicitud material de oficina</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolSup.php">
-                                    <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
-                                        <img src="img/svg/005-copy.svg">
-                                            <br>
-                                            <b>Resumen solicitud suplementos</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblLibros.php">
-                                    <button style="width:98%;" type="button" title="Boleta de pago" '.$disabled.'>
-                                        <img src="img/svg/004-id-card.svg">
-                                            <br>
-                                            <b>Boleta de pago</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblLibros.php">
-                                    <button style="width:98%;" type="button" title="Solicitud equipo de oficina" '.$disabled.'>
-                                        <img src="img/svg/008-money.svg">
-                                            <br>
-                                            <b>Solicitud equipo de oficina</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-                    </div><!--end class row-->    
-            
                 </div><!--end class container-->
             </section>
         
