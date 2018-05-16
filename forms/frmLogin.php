@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-include ('../plantilla/plantilla.php');
+include ('../plantilla/plantillaLogin.php');
 include('../procesos/acceder.php');
 $interfaz = new plantilla($user,$dir);
 $interfaz->header();

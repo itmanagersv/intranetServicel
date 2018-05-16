@@ -6,7 +6,7 @@ include('../clases/sesion.php');
 include ('../plantilla/plantilla.php');
 include('../procesos/material.php');
 $interfaz = new plantilla($user,$dir);
-$interfaz->header();
+$interfaz->header($rol);
 $interfaz->body();
 ?>
 <body>
