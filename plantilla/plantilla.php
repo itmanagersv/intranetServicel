@@ -61,7 +61,7 @@ class plantilla{
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solicitudes  <span class="fa fa-book"></span><strong class="caret"></strong></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Formularios  <span class="fa fa-book"></span><strong class="caret"></strong></a>
                                 <ul class="dropdown-menu" style="background:#1C1C1C;">
                                     <li>
                                         <a id="char" href="../forms/frmSolicitud.php">Solicitud de constancias <span></span></a>
@@ -78,13 +78,19 @@ class plantilla{
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver  <span class="fa fa-eye"></span><strong class="caret"></strong></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tablas  <span class="fa fa-eye"></span><strong class="caret"></strong></a>
                                 <ul class="dropdown-menu" style="background:#1C1C1C;">
                                     <li>
-                                        <a id="char" href="../forms/tblCita.php">Estado de solicitud  <span></span></a>
+                                        <a id="char" href="../forms/tblSolicitud.php">Resumen solicitudes de constancias  <span></span></a>
                                     </li>
                                     <li>
-                                        <a id="char" href="../forms/tblBoleta.php">Boleta de pago  <span></span></a>
+                                        <a id="char" href="../forms/tblCita.php">Resumen citas  <span></span></a>
+                                    </li>
+                                    <li>
+                                        <a id="char" href="../forms/tblSolSup.php">Resumen solicitudes de material  <span></span></a>
+                                    </li>
+                                    <li>
+                                        <a id="char" href="../forms/tblBoleta.php">Resumen boletas de pago  <span></span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -176,7 +182,7 @@ class plantilla{
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tablas  <span class="fa fa-eye"></span><strong class="caret"></strong></a>
                                     <ul class="dropdown-menu" style="background:#1C1C1C;">
                                         <li>
-                                            <a id="char" href="../forms/tblCita.php">Resumen solicitudes de constancias  <span></span></a>
+                                            <a id="char" href="../forms/tblSolicitud.php">Resumen solicitudes de constancias  <span></span></a>
                                         </li>
                                         <li>
                                             <a id="char" href="../forms/tblCita.php">Resumen citas  <span></span></a>
