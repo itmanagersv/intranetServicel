@@ -30,6 +30,7 @@ if (isset($_REQUEST['btnGuardar'])){
                             <strong>¡Éxito!</strong> Registro modificado de forma exitosa.
                         </div>
                         </div>";
+                        header("Location: ../index.php");
             
         }
     }else if($accion=='insert'){
@@ -58,14 +59,13 @@ if (isset($_REQUEST['btnGuardarEmpleado'])){
         $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
         $hCodigo = $bdConexion->retornarId();
         if($resultado==1){
-            $desac = 'disabled';
+            //$desac = 'disabled';
             print "<br><br><div class='container'>
                         <div class='alert alert-success alert-dismissable'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
                             <strong>¡Éxito!</strong> Registro guardado de forma exitosa.
                         </div>
-                        </div>";
-            
+                        </div>";    
         }
     }
 }//Fin de boton GuardarEmpleado
