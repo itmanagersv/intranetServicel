@@ -95,6 +95,14 @@ class plantilla{
                                 </ul>
                             </li>
                             <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes  <span class="fa fa-eye"></span><strong class="caret"></strong></a>
+                                <ul class="dropdown-menu" style="background:#1C1C1C;">
+                                    <li>
+                                        <a id="char" href="../forms/frmSolSupArea.php">Reporte solicitud de suplementeos de oficina  <span></span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mantenimientos  <span class="fa fa-gears"></span><strong class="caret"></strong></a>
                                 <ul class="dropdown-menu" style="background:#1C1C1C;">
                                     <li>

@@ -200,6 +200,18 @@ class plantilla{
                             </div><!--end class thumbnail-->
                         </div><!--end size-->
 
+                        <div class="col-sm-4 col-lg-3 col-md-3">
+                            <div class="thumbnail">
+                                <a href="forms/frmSlcReporte.php">
+                                    <button style="width:98%;" type="button" title="Reportes" '.$disabled.'>
+                                        <img src="img/svg/reporte.svg">
+                                            <br>
+                                            <b>Reportes</b>
+                                    </button>
+                                </a>
+                            </div><!--end class thumbnail-->
+                        </div><!--end size-->
+
                     </div><!--end class row-->                       
             
                 </div><!--end class container-->
