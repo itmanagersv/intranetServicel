@@ -3,6 +3,7 @@ include('../clases/conexion.php');
 $hCodigo        = (isset($_REQUEST['hCodigo'])?$_REQUEST['hCodigo']:null);
 $accion         = (isset($_REQUEST['accion'])?$_REQUEST['accion']:'insert');
 $idPersona      = (isset($_REQUEST['idPersona'])?$_REQUEST['idPersona']:null);
+$idTipo         = (isset($_REQUEST['idTipo'])?$_REQUEST['idTipo']:null);
 $slcMaterial    = (isset($_REQUEST['slcMaterial'])?$_REQUEST['slcMaterial']:null);
 $txtFecha       = (isset($_REQUEST['txtFecha'])?$_REQUEST['txtFecha']:null);
 $txtCantidad    = (isset($_REQUEST['txtCantidad'])?$_REQUEST['txtCantidad']:null);
@@ -12,8 +13,8 @@ $desac          = '';
 if (isset($_REQUEST['btnGuardar'])){
     if ($accion=='insert'){
         $tabla      = "tblsolsuplemento";
-        $campos     = "idpersona, idmaterial, fecha, cantidad, estado";
-        $valores    = "$idPersona, $slcMaterial, '$txtFecha', '$txtCantidad', '$txtestado'";
+        $campos     = "idpersona, idtipo, idmaterial, fecha, cantidad, estado";
+        $valores    = "$idPersona, $idTipo, $slcMaterial, '$txtFecha', '$txtCantidad', '$txtestado'";
         $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
         $hCodigo = $bdConexion->retornarId();
         if($resultado==1){

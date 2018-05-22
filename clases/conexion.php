@@ -99,7 +99,7 @@ class Conexion
 	{
 		$rs = $this->ejecutarSql($sql);
 		while($fila=mysqli_fetch_array($rs)){
-			print "<input type='hidden' class='form-control' id='$nombre' name='$nombre' 
+			print "<input type='text' class='form-control' id='$nombre' name='$nombre' 
 			readonly='true' value=".$fila[0].">";
 		}
 	}//Fin de select

@@ -167,9 +167,10 @@ switch($tabla){
 
     case 'tblsolsuplemento':
 
-    $sqlMostrar ='SELECT solm.idsolicitud AS "Código", per.nombre AS "Empleado", solm.fecha AS "Fecha de solicitud", 
+    $sqlMostrar ='SELECT solm.idsolicitud AS "Código", per.nombre AS "Empleado", tus.nombretipo AS "Área", solm.fecha AS "Fecha de solicitud", 
     mat.material AS "Material", solm.cantidad AS "Cantidad" FROM tblsolsuplemento solm INNER JOIN tblpersona per ON 
-    solm.idpersona = per.idpersona INNER JOIN tblmaterial mat ON  solm.idmaterial = mat.idmaterial WHERE solm.estado = "1"';
+    solm.idpersona = per.idpersona INNER JOIN tblmaterial mat ON  solm.idmaterial = mat.idmaterial 
+    INNER JOIN tbltipousuario tus ON tus.idtipo = solm.idtipo WHERE solm.estado = "1"';
     $rsMostrar = $bdConexion->ejecutarSql($sqlMostrar);
 
     print '<script type="text/javascript" src="../js/listar.js"></script>
@@ -177,6 +178,7 @@ switch($tabla){
               <tr>
                   <th>Código</th>
                   <th>Empleado</th>
+                  <th>Área</th>
                   <th>Fecha de solicitud</th>
                   <th>Material</th>
                   <th>Cantidad</th>
@@ -190,6 +192,7 @@ switch($tabla){
         <tr>
             <td>".$fila['Código']."</td>
             <td>".$fila['Empleado']."</td>
+            <td>".$fila['Área']."</td>
             <td>".date('d-m-Y', strtotime($fecha))."</td>
             <td>".$fila['Material']."</td>
             <td>".$fila['Cantidad']."</td>

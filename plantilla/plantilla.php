@@ -205,7 +205,7 @@ class plantilla{
                         </div><!-- /.container -->
                     </nav>';
                 
-            } else if($rol == 3){
+            } else if($rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9){
 
                 print '<head>
 

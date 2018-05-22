@@ -34,6 +34,12 @@ $interfaz->body();
                             tblpersona per ON per.idpersona = us.idpersona WHERE nombre = '$user'");
                     ?>
                 </div>
+                <div class="input-group" id="combobox">
+                    <?php
+                            $bdConexion->llenarText("idTipo","SELECT us.idtipo FROM tblusuario us INNER JOIN 
+                            tblpersona per ON per.idpersona = us.idpersona WHERE nombre = '$user'");
+                    ?>
+                </div>
                 <br>
                 <div class="input-group">
                     <input type="hidden" class="form-control" id="txtestado" name="txtestado" placeholder="" readonly="true" value="1">
