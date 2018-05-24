@@ -25,7 +25,7 @@ $interfaz->body();
             <br>
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                <input type="password" class="form-control" id="clave" name="clave"  placeholder="clave" required="true" value="<?=$clave?>" autocomplete="off">
+                <input type="password" class="form-control" id="clave" name="clave"  placeholder="Clave" required="true" value="<?=$clave?>" autocomplete="off">
             </div>
             <br>
             <br>

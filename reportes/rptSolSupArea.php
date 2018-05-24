@@ -80,7 +80,7 @@ sup.idmaterial";
 
 $rsMostrar = $bdConexion->ejecutarSQL($sql);
 ?>
-<body onload="window.print();">
+<body onload="window.print();" style="float: left; font-family: 'Lato';">
 <br><br>
 <div class="container">
 	<table id="example" align="center" class="table table-striped table-bordered">
@@ -99,8 +99,8 @@ $rsMostrar = $bdConexion->ejecutarSQL($sql);
 		</td>
 	</tr>
 	<tr>
-		<td colspan="2">
-			<div style="float: left; font-family: arial;">
+		<td colspan="3">
+			<div style="float: left; font-family: 'Lato';">
                             Generado:<?=date("d/M/Y")?><br>
 			</div>
                         <div style="float: right;">
