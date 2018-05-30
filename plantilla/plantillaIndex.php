@@ -212,7 +212,19 @@ class plantilla{
                             </div><!--end class thumbnail-->
                         </div><!--end size-->
 
-                    </div><!--end class row-->                       
+                        <div class="col-sm-4 col-lg-3 col-md-3">
+                            <div class="thumbnail">
+                                <a href="forms/frmSlcPolitica.php">
+                                    <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                        <img src="img/svg/contrato.svg">
+                                            <br>
+                                            <b>Políticas</b>
+                                    </button>
+                                </a>
+                            </div><!--end class thumbnail-->
+                        </div><!--end size-->          
+             
+                    </div><!--end class row-->
             
                 </div><!--end class container-->
                 </section>
