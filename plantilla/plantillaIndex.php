@@ -268,7 +268,7 @@ class plantilla{
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Opciones</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Opciones</a>
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">'.$this->user.'</a>
@@ -392,8 +392,26 @@ class plantilla{
                             </div><!--end class thumbnail-->
                         </div><!--end size-->
                         
-                    </div><!--end class row-->                      
-            
+                    </div><!--end class row--> 
+                    
+                    <br>
+
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-3 col-md-3">
+                            <div class="thumbnail">
+                                <a href="forms/frmSlcPolitica.php">
+                                    <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                        <img src="img/svg/contrato.svg">
+                                            <br>
+                                            <b>Políticas</b>
+                                    </button>
+                                </a>
+                            </div><!--end class thumbnail-->
+                    
+                        </div><!--end size-->     
+
+                    </div><!--end class row--> 
+                    
                 </div><!--end class container-->
                 </section>
 
@@ -524,6 +542,18 @@ class plantilla{
                                     </a>
                                 </div><!--end class thumbnail-->
                             </div><!--end size-->
+
+                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                <div class="thumbnail">
+                                    <a href="forms/frmSlcPolitica.php">
+                                        <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                            <img src="img/svg/contrato.svg">
+                                                <br>
+                                                <b>Políticas</b>
+                                        </button>
+                                    </a>
+                                </div><!--end class thumbnail-->
+                        </div><!--end size-->  
                             
                         </div><!--end class row-->                
                     </div><!--end class container-->

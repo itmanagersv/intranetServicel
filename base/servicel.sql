@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-05-2018 a las 22:40:08
+-- Tiempo de generación: 31-05-2018 a las 23:20:12
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -219,7 +219,9 @@ INSERT INTO `tblpersona` (`idpersona`, `nombre`, `dui`, `nit`) VALUES
 (6, 'Francisco Gálvez', '123456789-0', '0614-000000-107-5'),
 (7, 'Técnico1', '12345678-0', '0614-050207-107-9'),
 (8, 'Marlene Alvarado', '04493581-0', '0614-150195-107-7'),
-(9, 'Oscar Ortiz', '12323232', '23232323');
+(9, 'Oscar Ortiz', '12323232', '23232323'),
+(10, 'Recursos Humanos', '22222222-5', '0614-010101-107-9'),
+(11, 'Prueba', '11111111-1', '1111-111111-111-1');
 
 -- --------------------------------------------------------
 
@@ -242,12 +244,13 @@ CREATE TABLE `tblsolicitud` (
 --
 
 INSERT INTO `tblsolicitud` (`idsolicitud`, `idpersona`, `idtipo`, `fecha`, `comentario`, `idmotivo`, `estado`) VALUES
-(9, 6, 1, '2018-04-27', 'Hola', 1, 1),
+(9, 6, 1, '2018-04-27', 'Hola', 1, 0),
 (93, 1, 1, '2018-05-02', 'Prueba estado', 1, 1),
 (94, 1, 1, '2018-05-02', 'Prueba correo', 2, 1),
 (95, 1, 1, '2018-05-02', 'Prueba correo', 2, 1),
 (96, 1, 2, '2018-05-02', 'Prueba borrado', 1, 1),
-(99, 1, 1, '2018-05-08', '23232', 1, 1);
+(99, 1, 1, '2018-05-08', '23232', 1, 1),
+(100, 1, 2, '2018-05-29', 'Prueba lunes', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -258,6 +261,7 @@ INSERT INTO `tblsolicitud` (`idsolicitud`, `idpersona`, `idtipo`, `fecha`, `come
 CREATE TABLE `tblsolsuplemento` (
   `idsolicitud` int(11) NOT NULL,
   `idpersona` int(11) NOT NULL,
+  `idtipo` int(11) NOT NULL,
   `idmaterial` int(11) NOT NULL,
   `fecha` date NOT NULL,
   `cantidad` int(11) NOT NULL,
@@ -268,8 +272,10 @@ CREATE TABLE `tblsolsuplemento` (
 -- Volcado de datos para la tabla `tblsolsuplemento`
 --
 
-INSERT INTO `tblsolsuplemento` (`idsolicitud`, `idpersona`, `idmaterial`, `fecha`, `cantidad`, `estado`) VALUES
-(1, 1, 2, '2018-05-04', 3, 1);
+INSERT INTO `tblsolsuplemento` (`idsolicitud`, `idpersona`, `idtipo`, `idmaterial`, `fecha`, `cantidad`, `estado`) VALUES
+(1, 1, 1, 2, '2018-05-04', 3, 1),
+(2, 1, 1, 2, '2018-05-22', 1, 1),
+(3, 1, 1, 1, '2018-05-22', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -306,11 +312,15 @@ CREATE TABLE `tbltipousuario` (
 --
 
 INSERT INTO `tbltipousuario` (`idtipo`, `nombretipo`) VALUES
-(1, 'Administrador'),
+(1, 'IT'),
 (2, 'Recursos Humanos'),
 (3, 'Técnico'),
 (4, 'Supervisor'),
-(5, 'Agencia');
+(5, 'Agencia'),
+(6, 'Gerencia'),
+(7, 'Finanzas'),
+(8, 'Bodega'),
+(9, 'Logística');
 
 -- --------------------------------------------------------
 
@@ -335,7 +345,8 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (1, 1, 1, 'soporte2@servicelsv.net', 'Guill3rmo$', 1),
 (2, 6, 1, 'soporte@servicelsv.net', '$ervicel', 1),
 (3, 7, 3, 'tecnico1@servicelsv.net', '123', 1),
-(4, 8, 1, 'mar.alvarado@servicelsv.net', '456', 1);
+(4, 8, 1, 'mar.alvarado@servicelsv.net', '456', 1),
+(5, 10, 2, 'recursos@servicelsv.net', '123', 1);
 
 --
 -- Índices para tablas volcadas
@@ -409,7 +420,8 @@ ALTER TABLE `tblsolicitud`
 ALTER TABLE `tblsolsuplemento`
   ADD PRIMARY KEY (`idsolicitud`),
   ADD KEY `idpersona` (`idpersona`),
-  ADD KEY `idmaterial` (`idmaterial`);
+  ADD KEY `idmaterial` (`idmaterial`),
+  ADD KEY `idtipo` (`idtipo`);
 
 --
 -- Indices de la tabla `tbltiposolicitud`
@@ -480,19 +492,19 @@ ALTER TABLE `tblmotivo`
 -- AUTO_INCREMENT de la tabla `tblpersona`
 --
 ALTER TABLE `tblpersona`
-  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
 --
 ALTER TABLE `tblsolicitud`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolsuplemento`
 --
 ALTER TABLE `tblsolsuplemento`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `tbltiposolicitud`
@@ -504,13 +516,13 @@ ALTER TABLE `tbltiposolicitud`
 -- AUTO_INCREMENT de la tabla `tbltipousuario`
 --
 ALTER TABLE `tbltipousuario`
-  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `tblusuario`
 --
 ALTER TABLE `tblusuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -544,7 +556,8 @@ ALTER TABLE `tblsolicitud`
 --
 ALTER TABLE `tblsolsuplemento`
   ADD CONSTRAINT `tblsolsuplemento_ibfk_1` FOREIGN KEY (`idpersona`) REFERENCES `tblpersona` (`idpersona`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `tblsolsuplemento_ibfk_2` FOREIGN KEY (`idmaterial`) REFERENCES `tblmaterial` (`idmaterial`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `tblsolsuplemento_ibfk_2` FOREIGN KEY (`idmaterial`) REFERENCES `tblmaterial` (`idmaterial`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `tblsolsuplemento_ibfk_3` FOREIGN KEY (`idtipo`) REFERENCES `tbltipousuario` (`idtipo`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `tblusuario`
