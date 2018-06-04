@@ -288,7 +288,7 @@ switch($tabla){
     
     if($rol == 1 || $rol == 2){
         $sqlMostrar ='SELECT bol.idboleta AS "Código", bol.idpersona AS "Código empleado", per.nombre AS 
-        "Empleado", bol.boleta AS "Boleta de pago", bol.idmes AS "Código mes", mes.mes AS "Mes", bol.anyo AS 
+        "Empleado", bol.boleta AS "Boleta de pago", bol.quincena AS "Quincena", bol.idmes AS "Código mes", mes.mes AS "Mes", bol.anyo AS 
         "Año" FROM tblboleta bol INNER JOIN tblpersona per ON bol.idpersona = per.idpersona INNER JOIN tblmes 
         mes ON bol.idmes = mes.idmes ORDER BY mes.idmes ASC';
         $rsMostrar = $bdConexion->ejecutarSql($sqlMostrar);
@@ -299,6 +299,7 @@ switch($tabla){
                     <th>Código</th>
                     <th>Empleado</th>
                     <th>Boleta de pago</th>
+                    <th>Quincena</th>
                     <th>Mes</th>
                     <th>Año</th>
                 </tr>
@@ -311,6 +312,7 @@ switch($tabla){
                     <td>".$fila['Código']."</td>
                     <td>".$fila['Empleado']."</td>
                     <td><a href=".$fila['Boleta de pago']." target='_blank'><img src=".$fila['Boleta de pago']." style='width:100px;height:100px;'></a></td>
+                    <td>".$fila['Quincena']."</td>
                     <td>".$fila['Mes']."</td>
                     <td>".$fila['Año']."</td>
                 </tr> ";
@@ -319,7 +321,7 @@ switch($tabla){
                 </tbody></table>";   
     }else if($rol == 3){
         $sqlMostrar ='SELECT bol.idboleta AS "Código", bol.idpersona AS "Código empleado", per.nombre AS 
-        "Empleado", bol.boleta AS "Boleta de pago", bol.idmes AS "Código mes", mes.mes AS "Mes", bol.anyo AS 
+        "Empleado", bol.boleta AS "Boleta de pago", bol.quincena AS "Quincena", bol.idmes AS "Código mes", mes.mes AS "Mes", bol.anyo AS 
         "Año" FROM tblboleta bol INNER JOIN tblpersona per ON bol.idpersona = per.idpersona INNER JOIN tblmes 
         mes ON bol.idmes = mes.idmes WHERE bol.idpersona = '.$idPersona.' ORDER BY mes.idmes ASC';
         $rsMostrar = $bdConexion->ejecutarSql($sqlMostrar);
@@ -330,6 +332,7 @@ switch($tabla){
                     <th>Código</th>
                     <th>Empleado</th>
                     <th>Boleta de pago</th>
+                    <th>Quincena</th>
                     <th>Mes</th>
                     <th>Año</th>
                 </tr>
@@ -342,6 +345,7 @@ switch($tabla){
                     <td>".$fila['Código']."</td>
                     <td>".$fila['Empleado']."</td>
                     <td><a href=".$fila['Boleta de pago']." target='_blank'><img src=".$fila['Boleta de pago']." style='width:100px;height:100px;'></a></td>
+                    <td>".$fila['Quincena']."</td>
                     <td>".$fila['Mes']."</td>
                     <td>".$fila['Año']."</td>
                 </tr> ";
