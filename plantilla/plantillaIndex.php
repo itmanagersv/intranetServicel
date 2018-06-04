@@ -80,153 +80,189 @@ class plantilla{
                 
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                        <img src="img/svg/impresor.svg">
-                                            <br>
-                                            <b>Solicitud de documentos</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
-                                        <img src="img/svg/listado.svg">
-                                            <br>
-                                            <b>Resumen de solicitudes</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmCita.php">
-                                    <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                        <img src="img/svg/reunion.svg">
-                                            <br>
-                                            <b>Cita con RRHH</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblCita.php">
-                                    <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                        <img src="img/svg/calendario.svg">
-                                            <br>
-                                            <b>Resumen de citas</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-                    </div><!--end class row-->
-            
-                    <br>
-            
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmMaterial.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                        <img src="img/svg/clips.svg">
-                                            <br>
-                                            <b>Solicitud material de oficina</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolSup.php">
-                                    <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
-                                        <img src="img/svg/tareas.svg">
-                                            <br>
-                                            <b>Resumen solicitud suplementos</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmBoleta.php">
-                                    <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
-                                        <img src="img/svg/subir.svg">
-                                            <br>
-                                            <b>Subir boleta de pago</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblBoleta.php">
-                                    <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
-                                        <img src="img/svg/pago.svg">
-                                            <br>
-                                            <b>Ver boletas de pago</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-                        
-                    </div><!--end class row-->
+                    <div id="accordion">
+                        <div class="card">
+                                <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                        Recursos Humanos
+                                    </a>
+                                </div><!--end class card-header-->
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSolicitud.php">
+                                                        <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
+                                                            <img src="img/svg/impresor.svg">
+                                                                <br>
+                                                                <b>Solicitud de documentos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblSolicitud.php">
+                                                        <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
+                                                            <img src="img/svg/listado.svg">
+                                                                <br>
+                                                                <b>Resumen de solicitudes</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmCita.php">
+                                                        <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
+                                                            <img src="img/svg/reunion.svg">
+                                                                <br>
+                                                                <b>Cita con RRHH</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblCita.php">
+                                                        <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
+                                                            <img src="img/svg/calendario.svg">
+                                                                <br>
+                                                                <b>Resumen de citas</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                        </div><!--end class row-->
+                                        
+                                        <br>
 
-                    <br>
+                                        <div class="row">
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmMaterial.php">
+                                                        <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
+                                                            <img src="img/svg/clips.svg">
+                                                                <br>
+                                                                <b>Solicitud material de oficina</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblSolSup.php">
+                                                        <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
+                                                            <img src="img/svg/tareas.svg">
+                                                                <br>
+                                                                <b>Resumen solicitud suplementos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmBoleta.php">
+                                                        <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
+                                                            <img src="img/svg/subir.svg">
+                                                                <br>
+                                                                <b>Subir boleta de pago</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblBoleta.php">
+                                                        <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
+                                                            <img src="img/svg/pago.svg">
+                                                                <br>
+                                                                <b>Ver boletas de pago</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                        </div><!--end class row-->
 
-                    <div class="row">
+                                        <br>
 
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblUsuario.php">
-                                    <button style="width:98%;" type="button" title="Mantenimientos usuarios" '.$disabled.'>
-                                        <img src="img/svg/usuarios.svg">
-                                            <br>
-                                            <b>Mantenimiento usuarios</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
+                                        <div class="row">
 
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmSlcReporte.php">
-                                    <button style="width:98%;" type="button" title="Reportes" '.$disabled.'>
-                                        <img src="img/svg/reporte.svg">
-                                            <br>
-                                            <b>Reportes</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblUsuario.php">
+                                                        <button style="width:98%;" type="button" title="Mantenimientos usuarios" '.$disabled.'>
+                                                            <img src="img/svg/usuarios.svg">
+                                                                <br>
+                                                                <b>Mantenimiento usuarios</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
 
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmSlcPolitica.php">
-                                    <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
-                                        <img src="img/svg/contrato.svg">
-                                            <br>
-                                            <b>Políticas</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->          
-             
-                    </div><!--end class row-->
-            
-                </div><!--end class container-->
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcReporte.php">
+                                                        <button style="width:98%;" type="button" title="Reportes" '.$disabled.'>
+                                                            <img src="img/svg/reporte.svg">
+                                                                <br>
+                                                                <b>Reportes</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcPolitica.php">
+                                                        <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                                            <img src="img/svg/contrato.svg">
+                                                                <br>
+                                                                <b>Políticas</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->          
+                                
+                                        </div><!--end class row-->
+                                        
+                                    </div><!--end class card-body -->
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div><!--end class card-->
+                        </div>
+                    </div>
                 </section>
             
                 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -290,129 +326,177 @@ class plantilla{
                 
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                        <img src="img/svg/impresor.svg">
-                                            <br>
-                                            <b>Solicitud de documentos</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolicitud.php">
-                                    <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
-                                        <img src="img/svg/listado.svg">
-                                            <br>
-                                            <b>Resumen de solicitudes</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmCita.php">
-                                    <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                        <img src="img/svg/reunion.svg">
-                                            <br>
-                                            <b>Cita con RRHH</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblCita.php">
-                                    <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                        <img src="img/svg/calendario.svg">
-                                            <br>
-                                            <b>Resumen de citas</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-                    </div><!--end class row-->
-            
-                    <br>
-            
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmMaterial.php">
-                                    <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                        <img src="img/svg/clips.svg">
-                                            <br>
-                                            <b>Solicitud material de oficina</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblSolSup.php">
-                                    <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
-                                        <img src="img/svg/tareas.svg">
-                                            <br>
-                                            <b>Resumen solicitud suplementos</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmBoleta.php">
-                                    <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
-                                        <img src="img/svg/subir.svg">
-                                            <br>
-                                            <b>Subir boleta de pago</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-            
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/tblBoleta.php">
-                                    <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
-                                        <img src="img/svg/pago.svg">
-                                            <br>
-                                            <b>Ver boletas de pago</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                        </div><!--end size-->
-                        
-                    </div><!--end class row--> 
-                    
-                    <br>
+                    <div id="accordion">
+                        <div class="card">
+                                <div class="card-header">
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                        Recursos Humanos
+                                    </a>
+                                </div><!--end class card-header-->
+                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSolicitud.php">
+                                                        <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
+                                                            <img src="img/svg/impresor.svg">
+                                                                <br>
+                                                                <b>Solicitud de documentos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblSolicitud.php">
+                                                        <button style="width:98%;" type="button" title="Resumen de solicitudes" '.$disabled.'>
+                                                            <img src="img/svg/listado.svg">
+                                                                <br>
+                                                                <b>Resumen de solicitudes</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmCita.php">
+                                                        <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
+                                                            <img src="img/svg/reunion.svg">
+                                                                <br>
+                                                                <b>Cita con RRHH</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblCita.php">
+                                                        <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
+                                                            <img src="img/svg/calendario.svg">
+                                                                <br>
+                                                                <b>Resumen de citas</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                        </div><!--end class row-->
+                                        
+                                        <br>
 
-                    <div class="row">
-                        <div class="col-sm-4 col-lg-3 col-md-3">
-                            <div class="thumbnail">
-                                <a href="forms/frmSlcPolitica.php">
-                                    <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
-                                        <img src="img/svg/contrato.svg">
-                                            <br>
-                                            <b>Políticas</b>
-                                    </button>
-                                </a>
-                            </div><!--end class thumbnail-->
-                    
-                        </div><!--end size-->     
+                                        <div class="row">
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmMaterial.php">
+                                                        <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
+                                                            <img src="img/svg/clips.svg">
+                                                                <br>
+                                                                <b>Solicitud material de oficina</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblSolSup.php">
+                                                        <button style="width:98%;" type="button" title="Resumen solicitud suplementos" '.$disabled.'>
+                                                            <img src="img/svg/tareas.svg">
+                                                                <br>
+                                                                <b>Resumen solicitud suplementos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmBoleta.php">
+                                                        <button style="width:98%;" type="button" title="Subir boleta de pago" '.$disabled.'>
+                                                            <img src="img/svg/subir.svg">
+                                                                <br>
+                                                                <b>Subir boleta de pago</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblBoleta.php">
+                                                        <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
+                                                            <img src="img/svg/pago.svg">
+                                                                <br>
+                                                                <b>Ver boletas de pago</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                        </div><!--end class row-->
 
-                    </div><!--end class row--> 
-                    
-                </div><!--end class container-->
+                                        <br>
+
+                                        <div class="row">
+
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcReporte.php">
+                                                        <button style="width:98%;" type="button" title="Reportes" '.$disabled.'>
+                                                            <img src="img/svg/reporte.svg">
+                                                                <br>
+                                                                <b>Reportes</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcPolitica.php">
+                                                        <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                                            <img src="img/svg/contrato.svg">
+                                                                <br>
+                                                                <b>Políticas</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->          
+                                
+                                        </div><!--end class row-->
+                                        
+                                    </div><!--end class card-body -->
+                                </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                    </div>
+                                </div><!--end class card-->
+                        </div>
+                    </div>
                 </section>
 
                 <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -476,87 +560,128 @@ class plantilla{
                 
                     <!-- Portfolio Grid Section -->
                     <section class="portfolio" id="portfolio">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/frmSolicitud.php">
-                                        <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
-                                            <img src="img/svg/impresor.svg">
-                                                <br>
-                                                <b>Solicitud de documentos</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                            </div><!--end size-->
-                
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/frmCita.php">
-                                        <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
-                                            <img src="img/svg/reunion.svg">
-                                                <br>
-                                                <b>Cita con RRHH</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                            </div><!--end size-->
-                
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/tblCita.php">
-                                        <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
-                                            <img src="img/svg/calendario.svg">
-                                                <br>
-                                                <b>Resumen de citas</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                            </div><!--end size-->
+                        <div id="accordion">
+                            <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                            Recursos Humanos
+                                        </a>
+                                    </div><!--end class card-header-->
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="forms/frmSolicitud.php">
+                                                            <button style="width:98%;" type="button" title="Solicitud de documentos" '.$disabled.'>
+                                                                <img src="img/svg/impresor.svg">
+                                                                    <br>
+                                                                    <b>Solicitud de documentos</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
+                                                </div><!--end size-->
+                                    
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="forms/frmCita.php">
+                                                            <button style="width:98%;" type="button" title="Cita con RRHH" '.$disabled.'>
+                                                                <img src="img/svg/reunion.svg">
+                                                                    <br>
+                                                                    <b>Cita con RRHH</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
+                                                </div><!--end size-->
+                                    
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="forms/tblCita.php">
+                                                            <button style="width:98%;" type="button" title="Resumen de citas" '.$disabled.'>
+                                                                <img src="img/svg/calendario.svg">
+                                                                    <br>
+                                                                    <b>Resumen de citas</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
 
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/frmMaterial.php">
-                                        <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
-                                            <img src="img/svg/clips.svg">
-                                                <br>
-                                                <b>Solicitud material de oficina</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                            </div><!--end size-->
+                                                </div><!--end size-->
 
-                        </div><!--end class row-->
-                
-                        <br>
-                
-                        <div class="row">
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/tblBoleta.php">
-                                        <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
-                                            <img src="img/svg/pago.svg">
-                                                <br>
-                                                <b>Ver boletas de pago</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                            </div><!--end size-->
+                                                    <div class="col-sm-4 col-lg-3 col-md-3">
+                                                        <div class="thumbnail">
+                                                            <a href="forms/frmMaterial.php">
+                                                                <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
+                                                                    <img src="img/svg/clips.svg">
+                                                                        <br>
+                                                                        <b>Solicitud material de oficina</b>
+                                                                </button>
+                                                            </a>
+                                                        </div><!--end class thumbnail-->
+                                                    </div><!--end size-->
 
-                            <div class="col-sm-4 col-lg-3 col-md-3">
-                                <div class="thumbnail">
-                                    <a href="forms/frmSlcPolitica.php">
-                                        <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
-                                            <img src="img/svg/contrato.svg">
-                                                <br>
-                                                <b>Políticas</b>
-                                        </button>
-                                    </a>
-                                </div><!--end class thumbnail-->
-                        </div><!--end size-->  
-                            
-                        </div><!--end class row-->                
-                    </div><!--end class container-->
+                                            </div><!--end class row-->
+                                     
+                                            <br>
+    
+                                            <div class="row">
+                                    
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="forms/tblBoleta.php">
+                                                            <button style="width:98%;" type="button" title="Ver boletas de pago" '.$disabled.'>
+                                                                <img src="img/svg/pago.svg">
+                                                                    <br>
+                                                                    <b>Ver boletas de pago</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
+
+                                                </div><!--end size-->
+
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                        <div class="thumbnail">
+                                                            <a href="forms/frmSlcPolitica.php">
+                                                                <button style="width:98%;" type="button" title="Políticas" '.$disabled.'>
+                                                                    <img src="img/svg/contrato.svg">
+                                                                        <br>
+                                                                        <b>Políticas</b>
+                                                                </button>
+                                                            </a>
+                                                        </div><!--end class thumbnail-->
+
+                                                </div><!--end size-->
+                                                
+                                            </div><!--end class row-->
+                                            
+                                        </div><!--end class card-body -->
+                                    </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                                Collapsible Group Item #2
+                                            </a>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                            <div class="card-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div><!--end class card-->
+                            </div>
+                        </div>
                     </section>
                 
                     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
