@@ -522,7 +522,8 @@ class plantilla{
                 <script src="js/freelancer.min.js"></script>
             
             </body>';
-        }else if($rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9){
+        }else if($rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9 
+        || $rol == 10 || $rol == 11){
             $disabled = '';
             if ($this->user == 'Iniciar Sesión'){ $disabled = ' disabled="true" '; }
             print '<body id="page-top">
@@ -820,8 +821,6 @@ class plantilla{
                     </div>
                 </div>';
         }
-
-        
 
     }//Final function footer
     
