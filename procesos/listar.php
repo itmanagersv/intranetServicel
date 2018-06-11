@@ -105,7 +105,7 @@ switch($tabla){
             }//Fin while
             print "
                 </tbody></table>";   
-    }else if($rol == 3){
+    }else if($rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9 || $rol == 10 || $rol == 11){
         $sqlMostrar ='SELECT per.nombre AS "Empleado", ci.fechasolicitud AS "Fecha de solicitud", 
         ci.fechacita AS "Fecha cita", h.hora AS "Hora", ci.comentarios AS "Comentario", est.estado AS "Estado" 
         FROM tblcita ci INNER JOIN tblpersona per ON ci.idpersona = per.idpersona INNER JOIN tblestado est ON 
@@ -319,7 +319,7 @@ switch($tabla){
             }//Fin while
             print "
                 </tbody></table>";   
-    }else if($rol == 3){
+    }else if($rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9 || $rol == 10 || $rol == 11){
         $sqlMostrar ='SELECT bol.idboleta AS "Código", bol.idpersona AS "Código empleado", per.nombre AS 
         "Empleado", bol.boleta AS "Boleta de pago", bol.quincena AS "Quincena", bol.idmes AS "Código mes", mes.mes AS "Mes", bol.anyo AS 
         "Año" FROM tblboleta bol INNER JOIN tblpersona per ON bol.idpersona = per.idpersona INNER JOIN tblmes 
