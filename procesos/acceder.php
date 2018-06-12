@@ -14,21 +14,21 @@ $dir = '#';
 if (isset($_REQUEST['btnIngresar']))
 {
         $rol = 0;
-		$sqlConsulta = "SELECT us.idusuario, per.idpersona, per.nombre, us.user, us.pass, us.idtipo, us.activo FROM tblusuario us INNER JOIN 
+		$sqlConsulta = "SELECT us.idusuario, per.idpersona, per.nombre, us.user, us.pass, us.idtipo, us.activo, us.cambio FROM tblusuario us INNER JOIN 
         tblpersona per ON per.idpersona = us.idpersona WHERE user ='$usuario' AND pass='$clave' AND activo!='0'";
 		$resultado =  $bdConexion->ejecutarSql($sqlConsulta);
                     while($fila = mysqli_fetch_array($resultado))
                     {
-                            $rol        = $fila['idtipo'];
-                            $idUsuario  = $fila['idusuario'];
-                            $idPersona  = $fila['idpersona'];
+                            $rol                 = $fila['idtipo'];
+                            $idUsuario           = $fila['idusuario'];
+                            $idPersona           = $fila['idpersona'];
+                            $cambio              = $fila['cambio'];
                             $_SESSION['usuario'] = $usuario;
                             $_SESSION['id']      = $idUsuario;
-                            $_SESSION['rol'] = $rol;
+                            $_SESSION['rol']     = $rol;
                             $_SESSION['persona'] = $idPersona;
                     }
-                    if ($rol == 0 )
-                    {                        
+                    if ($rol == 0){                        
                         print "<br><br><div class='container'>
                         <div class='alert alert-danger alert-dismissable'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -36,24 +36,22 @@ if (isset($_REQUEST['btnIngresar']))
                         </div>
                        </div>";
 
-                    }else{
+                    }else if($rol != 0){
                         
                         $sqlConsulta = "SELECT nombre FROM tblpersona WHERE idpersona =$idPersona";
             			$resultado =  $bdConexion->ejecutarSql($sqlConsulta);
-            			while($fila = mysqli_fetch_array($resultado))
-            			{
+            			while($fila = mysqli_fetch_array($resultado)){
             				$nombre = $fila['nombre'];
             				$_SESSION['nombre'] = $nombre;
             		    }
 
-                        if ($rol == 1 || $rol == 2 || $rol == 3 || $rol == 4)
-                        {
+                        if (($rol == 1 || $rol == 2 || $rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9 
+                        || $rol == 10 || $rol == 11) && $cambio != 0){
 
                                 header("location:../index.php");
 
-                        }else
-                        {
-                                header("location:../index.php");   
+                        }else{
+                            header("location:../forms/frmPrimerAcceso.php");
                         }
                     }
 
