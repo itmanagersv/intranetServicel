@@ -8,6 +8,10 @@ include('../procesos/subirBoleta.php');
 $interfaz = new plantilla($user,$dir);
 $interfaz->header($rol);
 $interfaz->body();
+$desac = '';
+if($rol != 1 || $rol != 2){
+    $desac = 'disabled';
+}
 ?>
 <body>
 <div class="container">
@@ -21,7 +25,12 @@ $interfaz->body();
                 <tr>
                     <td>
                         <form action="frmBoleta.php" method="POST">
-                            <button type="submit" class="btn btn-primary pull-left">Agregar Boleta</button>
+                            <?php 
+                                if($rol == 1 || $rol == 2){
+                                    print '<button type="submit" class="btn btn-primary pull-left">Agregar Boleta</button>';
+                                }
+                            ?>
+                            
                             <input type="hidden" id="tabla" name="tabla" value="tblboleta">
                             <input type="hidden" id="id" value="0">
                         </form>

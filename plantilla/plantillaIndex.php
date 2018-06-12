@@ -63,6 +63,9 @@ class plantilla{
                         <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">'.$this->user.'</a>
                         </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="procesos/cerrarSesion.php">Salir</a>
+                        </li>
                     </ul>
                     </div>
                 </div>
@@ -230,7 +233,19 @@ class plantilla{
                                                         </button>
                                                     </a>
                                                 </div><!--end class thumbnail-->
-                                            </div><!--end size-->          
+                                            </div><!--end size-->    
+                                            
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcManual.php">
+                                                        <button style="width:98%;" type="button" title="Manuales" '.$disabled.'>
+                                                            <img src="img/svg/papers.svg">
+                                                                <br>
+                                                                <b>Manuales</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size--> 
                                 
                                         </div><!--end class row-->
                                         
@@ -308,6 +323,9 @@ class plantilla{
                         </li>
                         <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">'.$this->user.'</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="procesos/cerrarSesion.php">Salir</a>
                         </li>
                     </ul>
                     </div>
@@ -464,7 +482,19 @@ class plantilla{
                                                         </button>
                                                     </a>
                                                 </div><!--end class thumbnail-->
-                                            </div><!--end size-->          
+                                            </div><!--end size--> 
+                                            
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/frmSlcManual.php">
+                                                        <button style="width:98%;" type="button" title="Manuales" '.$disabled.'>
+                                                            <img src="img/svg/papers.svg">
+                                                                <br>
+                                                                <b>Manuales</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size--> 
                                 
                                         </div><!--end class row-->
                                         
@@ -543,6 +573,9 @@ class plantilla{
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">'.$this->user.'</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="procesos/cerrarSesion.php">Salir</a>
                             </li>
                         </ul>
                         </div>
@@ -651,6 +684,19 @@ class plantilla{
                                                         </div><!--end class thumbnail-->
 
                                                 </div><!--end size-->
+
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                        <div class="thumbnail">
+                                                            <a href="forms/frmSlcManual.php">
+                                                                <button style="width:98%;" type="button" title="Manuales" '.$disabled.'>
+                                                                    <img src="img/svg/papers.svg">
+                                                                        <br>
+                                                                        <b>Manuales</b>
+                                                                </button>
+                                                            </a>
+                                                        </div><!--end class thumbnail-->
+
+                                                </div><!--end size--> 
                                                 
                                             </div><!--end class row-->
                                             
@@ -803,8 +849,6 @@ class plantilla{
             <div class="copyright py-4 text-center text-white">
                 <div class="container">
                     <a>'.$userfooter.'</a>
-                    <br>
-                    <a href="procesos/cerrarSesion.php">Cerrar Sesión</a>
                     <br>
                     <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
                 </div>

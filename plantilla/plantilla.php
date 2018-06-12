@@ -113,6 +113,11 @@ class plantilla{
                         </ul>
                         <ul class="nav navbar-nav pull-right">
                             <li>
+                                <a href="../procesos/cerrarSesion.php">Salir</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li>
                                 <a href="#">'.$this->user.'</a>
                             </li>
                         </ul>
@@ -206,6 +211,11 @@ class plantilla{
                             </ul>
                             <ul class="nav navbar-nav pull-right">
                                 <li>
+                                    <a href="../procesos/cerrarSesion.php">Salir</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                                <li>
                                     <a href="#">'.$this->user.'</a>
                                 </li>
                             </ul>
@@ -286,6 +296,11 @@ class plantilla{
                                             <a id="char" href="../forms/tblBoleta.php">Boletas de pago  <span></span></a>
                                         </li>
                                     </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                                <li>
+                                    <a href="../procesos/cerrarSesion.php">Salir</a>
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav pull-right">
