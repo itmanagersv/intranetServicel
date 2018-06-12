@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-05-2018 a las 23:20:12
+-- Tiempo de generación: 12-06-2018 a las 22:34:39
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -80,7 +80,8 @@ INSERT INTO `tblcita` (`idcita`, `idpersona`, `fechasolicitud`, `fechacita`, `id
 (53, 1, '2018-05-08', '1970-01-15', 6, 'Prueba datepicker 1', 1, 1),
 (54, 1, '2018-05-08', '2018-05-16', 4, 'Prueba datepicker 2', 1, 1),
 (55, 1, '2018-05-08', '1970-01-01', 1, 'dsfsdf', 2, 1),
-(56, 1, '2018-05-08', '1970-01-01', 4, 'sfdsfsfs', 1, 1);
+(56, 1, '2018-05-08', '1970-01-01', 4, 'sfdsfsfs', 1, 1),
+(57, 1, '2018-06-05', '2018-06-04', 6, 'Prueba 2', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -250,7 +251,8 @@ INSERT INTO `tblsolicitud` (`idsolicitud`, `idpersona`, `idtipo`, `fecha`, `come
 (95, 1, 1, '2018-05-02', 'Prueba correo', 2, 1),
 (96, 1, 2, '2018-05-02', 'Prueba borrado', 1, 1),
 (99, 1, 1, '2018-05-08', '23232', 1, 1),
-(100, 1, 2, '2018-05-29', 'Prueba lunes', 1, 1);
+(100, 1, 2, '2018-05-29', 'Prueba lunes', 1, 1),
+(101, 1, 2, '2018-06-05', 'bvfgfgfg', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -320,7 +322,9 @@ INSERT INTO `tbltipousuario` (`idtipo`, `nombretipo`) VALUES
 (6, 'Gerencia'),
 (7, 'Finanzas'),
 (8, 'Bodega'),
-(9, 'Logística');
+(9, 'Logística'),
+(10, 'Claims'),
+(11, 'Control de Calidad');
 
 -- --------------------------------------------------------
 
@@ -334,19 +338,20 @@ CREATE TABLE `tblusuario` (
   `idtipo` int(11) NOT NULL,
   `user` varchar(50) NOT NULL,
   `pass` varchar(50) NOT NULL,
-  `activo` int(11) NOT NULL
+  `activo` int(11) NOT NULL,
+  `cambio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `tblusuario`
 --
 
-INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `activo`) VALUES
-(1, 1, 1, 'soporte2@servicelsv.net', 'Guill3rmo$', 1),
-(2, 6, 1, 'soporte@servicelsv.net', '$ervicel', 1),
-(3, 7, 3, 'tecnico1@servicelsv.net', '123', 1),
-(4, 8, 1, 'mar.alvarado@servicelsv.net', '456', 1),
-(5, 10, 2, 'recursos@servicelsv.net', '123', 1);
+INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `activo`, `cambio`) VALUES
+(1, 1, 1, 'soporte2@servicelsv.net', 'Guill3rmo$', 1, 1),
+(2, 6, 1, 'soporte@servicelsv.net', '$ervicel', 1, 0),
+(3, 7, 3, 'tecnico1@servicelsv.net', '123', 1, 0),
+(4, 8, 1, 'mar.alvarado@servicelsv.net', '456', 1, 0),
+(5, 10, 2, 'recursos@servicelsv.net', '123', 1, 0);
 
 --
 -- Índices para tablas volcadas
@@ -456,7 +461,7 @@ ALTER TABLE `tblboleta`
 -- AUTO_INCREMENT de la tabla `tblcita`
 --
 ALTER TABLE `tblcita`
-  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT de la tabla `tblestado`
@@ -498,7 +503,7 @@ ALTER TABLE `tblpersona`
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
 --
 ALTER TABLE `tblsolicitud`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolsuplemento`
@@ -516,7 +521,7 @@ ALTER TABLE `tbltiposolicitud`
 -- AUTO_INCREMENT de la tabla `tbltipousuario`
 --
 ALTER TABLE `tbltipousuario`
-  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `tblusuario`
