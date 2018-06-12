@@ -5,6 +5,7 @@ session_start();
 include ('../plantilla/plantilla.php');
 include('../clases/sesion.php');
 include('../procesos/slcReporte.php');
+include('../procesos/validarActivo.php');
 $interfaz = new plantilla($user,$dir);
 $interfaz->header($rol);
 $interfaz->body();

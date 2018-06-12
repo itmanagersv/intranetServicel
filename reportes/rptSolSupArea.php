@@ -80,7 +80,7 @@ sup.idmaterial";
 
 $rsMostrar = $bdConexion->ejecutarSQL($sql);
 ?>
-<body onload="window.print();" style="float: left; font-family: 'Lato';">
+<body style="float: center; font-family: 'Lato';">
 <br><br>
 <div class="container">
 	<table id="example" align="center" class="table table-striped table-bordered">
