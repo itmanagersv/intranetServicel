@@ -850,6 +850,8 @@ class plantilla{
                 <div class="container">
                     <a>'.$userfooter.'</a>
                     <br>
+                    <small>Navegadores recomendados: Opera 50 ó superior, Chrome 60 ó superior</small>
+                    <br>
                     <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
                 </div>
             </div>';
@@ -861,9 +863,9 @@ class plantilla{
                     <br>
                     <a href="procesos/cerrarSesion.php">Cerrar Sesión</a>
                     <br>
-                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
+                    <small>Navegadores recomendados: Opera 50 ó superior, Chrome 60 ó superior</small>
                     <br>
-                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
+                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>                    
                     </div>
                 </div>';
         }
