@@ -9,7 +9,6 @@
     $interfaz->header();
     $interfaz->body($rol);
     $interfaz->footer();
-    print 'server';
 ?> 
 
 </html>
