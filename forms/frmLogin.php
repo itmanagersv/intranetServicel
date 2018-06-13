@@ -20,7 +20,7 @@ $interfaz->body();
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
                 <input type="hidden" id="hCodigo" name="hCodigo" value="<?=$hCodigo?>">
-                <input type="text" class="form-control" id="usuario" name="usuario"  placeholder="Usuario" required="true" value="<?=$usuario?>" autocomplete="off">
+                <input type="text" class="form-control" id="usuario" name="usuario"  placeholder="Usuario" required="true" value="<?=$usuario?>" autocomplete="off" autofocus>
             </div>
             <br>
             <div class="input-group">

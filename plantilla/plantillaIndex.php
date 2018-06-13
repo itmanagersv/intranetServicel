@@ -861,7 +861,9 @@ class plantilla{
                     <br>
                     <a href="procesos/cerrarSesion.php">Cerrar Sesión</a>
                     <br>
-                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small> 
+                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
+                    <br>
+                    <small>Derechos reservados &copy; Servicel Corporation S.A de C.V</small>
                     </div>
                 </div>';
         }

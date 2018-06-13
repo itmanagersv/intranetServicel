@@ -4,8 +4,7 @@ tblpersona per ON per.idpersona = us.idpersona WHERE nombre ='$user' AND activo!
 $rsMostrar =  $bdConexion->ejecutarSql($sqlConsulta);
 $fila = mysqli_fetch_array($rsMostrar);
 $activo = $fila["activo"];
-            if ($activo == 0 )
-            {
+            if ($activo == 0 ){
                 session_destroy();                        
                 header("location:../forms/frmLogin.php");
             }
