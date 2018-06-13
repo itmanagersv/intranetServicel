@@ -19,7 +19,7 @@ $desac          = '';
 if (isset($_REQUEST['btnGuardar'])){
     if ($accion=='update'){
         $tabla      = "tblusuario";
-        $campos     = "idpersona = '$idpersona', idtipo = '$slcTipo', user = '$txtuser', pass = '$txtpass', activo = '$txtactivo'";
+        $campos     = "idpersona = '$idpersona', idtipo = '$slcTipo', user = '$txtuser', pass = '$txtpass', activo = '$txtactivo', cambio = 0";
         $condicion	= "idusuario = $hCodigo";
         $resultado  = $bdConexion->actualizarDB($tabla,$campos,$condicion);
         if($resultado==1){
