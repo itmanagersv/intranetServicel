@@ -33,7 +33,12 @@ $interfaz->body();
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                     <select name="slcManual" id="slcManual" class="form-control">
 					    <option value="0">Selecccionar manual a visualizar</option>
-                        <option value="1">Prueba manual</option>
+                        <option value="1">Manual de envió de repuestos malos SAMSUNG</option>
+                        <option value="2">Proceso de compra General SV</option>
+                        <option value="3">Proceso de compras marca Huawei</option>
+                        <option value="4">Proceso ingreso de clientes por atencion al cliente en  CYS</option>
+                        <option value="5">Proceso tecnico para etiquetar repuestos malos Samsung</option>
+
                     </select>
                 </div>
                 <br>
