@@ -9,6 +9,7 @@
     $interfaz->header();
     $interfaz->body($rol);
     $interfaz->footer();
+    print 'laptop guille';
 ?> 
 
 </html>
