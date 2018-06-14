@@ -38,7 +38,9 @@ $interfaz->body();
                         <option value="3">Proceso de compras marca Huawei</option>
                         <option value="4">Proceso ingreso de clientes por atencion al cliente en  CYS</option>
                         <option value="5">Proceso tecnico para etiquetar repuestos malos Samsung</option>
-
+                        <option value="6">Glosario</option>
+                        <option value="7">Manual de uso Scanner Barcode</option>
+                        
                     </select>
                 </div>
                 <br>

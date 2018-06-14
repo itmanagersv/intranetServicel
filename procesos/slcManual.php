@@ -10,7 +10,7 @@ if (isset($_REQUEST['btnSeleccionar'])){
         case '1':
             //echo '<script type="text/javascript" language="Javascript">window.open("../pdf/politicas/La Chica 
             //del Tren.pdf");</script>';
-            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1hRtZO2z8MJRILVXauCUl68mpyB3C8WmZ/view?usp=sharing");
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1-Ep5H1Vv3e_bFaBt298BgGemHU43tUHY/view?usp=sharing");
             </script>'; 
             break;
 
@@ -32,7 +32,18 @@ if (isset($_REQUEST['btnSeleccionar'])){
         case '5':
             echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1_f_HH03MZjcrv5qpamVu_BlwqtojKdhB/view?usp=sharing");
             </script>'; 
+            break;
+            
+        case '6':
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1KfevticR1SIK1SRIPNbW1vu0q4tzg6zQ/view?usp=sharing");
+            </script>'; 
             break;    
+
+        case '7':
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1biajDDjj7MS30FHetjvYhAl74DxN7YFc/view?usp=sharing");
+            </script>'; 
+            break;
+
         default:
             break;
 
