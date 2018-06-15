@@ -74,7 +74,7 @@ class plantilla{
                 <!-- Header -->
                 <header class="masthead bg-primary text-white text-center">
                 <div class="container">
-                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/computadora.svg" alt="" style="height: 100px">
+                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/logo2.jpg" alt="" style="height: 250px">
                     <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                     <hr class="star-light">
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
@@ -335,7 +335,7 @@ class plantilla{
                 <!-- Header -->
                 <header class="masthead bg-primary text-white text-center">
                 <div class="container">
-                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/computadora.svg" alt="" style="height: 100px">
+                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/logo2.jpg" alt="" style="height: 250px">
                     <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                     <hr class="star-light">
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
@@ -585,7 +585,7 @@ class plantilla{
                     <!-- Header -->
                     <header class="masthead bg-primary text-white text-center">
                     <div class="container">
-                        <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/002-computer-2.svg" alt="" style="height: 100px">
+                        <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/logo2.jpg" alt="" style="height: 250px">
                         <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                         <hr class="star-light">
                         <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
@@ -783,7 +783,7 @@ class plantilla{
                 <!-- Header -->
                 <header class="masthead bg-primary text-white text-center">
                 <div class="container">
-                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/002-computer-2.svg" alt="" style="height: 100px">
+                    <img class="img-fluid mb-5 d-block mx-auto" src="img/svg/logo2.jpg" alt="" style="height: 250px">
                     <h1 class="text-uppercase mb-0">Intranet El Salvador</h1>
                     <hr class="star-light">
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
