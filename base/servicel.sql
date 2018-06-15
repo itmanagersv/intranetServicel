@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-06-2018 a las 22:34:39
+-- Tiempo de generación: 15-06-2018 a las 16:01:43
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -39,22 +39,6 @@ CREATE TABLE `tblboleta` (
   `anyo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tblboleta`
---
-
-INSERT INTO `tblboleta` (`idboleta`, `idpersona`, `boleta`, `nombreBoleta`, `tipo`, `idmes`, `quincena`, `anyo`) VALUES
-(6, 1, '../img/boletas/892018.png', '892018.png', 'image/png', 9, 1, 2018),
-(7, 1, '../img/boletas/932018.png', '932018.png', 'image/png', 3, 2, 2018),
-(8, 9, '../img/boletas/932018.png', '932018.png', 'image/png', 3, 1, 2018),
-(9, 8, '../img/boletas/852018.jpg', '852018.jpg', 'image/jpeg', 5, 2, 2018),
-(10, 8, '../img/boletas/52018.jpg', '52018.jpg', 'image/jpeg', 5, 1, 2018),
-(11, 1, '../img/boletas/132018.jpg', '132018.jpg', 'image/jpeg', 3, 2, 2018),
-(12, 8, '../img/boletas/22018.jpg', '22018.jpg', 'image/jpeg', 2, 1, 2018),
-(13, 1, '../img/boletas/Emp1Mes9Año2018.jpg', 'Emp1Mes9Año2018.jpg', 'image/jpeg', 9, 1, 2018),
-(14, 6, '../img/boletas/E6-M7-A2018.jpg', 'E6-M7-A2018.jpg', 'image/jpeg', 7, 2, 2018),
-(15, 8, '../img/boletas/E8-M41-A2018.jpg', 'E8-M41-A2018.jpg', 'image/jpeg', 4, 1, 2018);
-
 -- --------------------------------------------------------
 
 --
@@ -71,17 +55,6 @@ CREATE TABLE `tblcita` (
   `idestado` int(11) NOT NULL,
   `visible` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tblcita`
---
-
-INSERT INTO `tblcita` (`idcita`, `idpersona`, `fechasolicitud`, `fechacita`, `idhora`, `comentarios`, `idestado`, `visible`) VALUES
-(53, 1, '2018-05-08', '1970-01-15', 6, 'Prueba datepicker 1', 1, 1),
-(54, 1, '2018-05-08', '2018-05-16', 4, 'Prueba datepicker 2', 1, 1),
-(55, 1, '2018-05-08', '1970-01-01', 1, 'dsfsdf', 2, 1),
-(56, 1, '2018-05-08', '1970-01-01', 4, 'sfdsfsfs', 1, 1),
-(57, 1, '2018-06-05', '2018-06-04', 6, 'Prueba 2', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -211,19 +184,6 @@ CREATE TABLE `tblpersona` (
   `nit` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `tblpersona`
---
-
-INSERT INTO `tblpersona` (`idpersona`, `nombre`, `dui`, `nit`) VALUES
-(1, 'Luis Martínez', '04493581-5', '0614-010991-107-9'),
-(6, 'Francisco Gálvez', '123456789-0', '0614-000000-107-5'),
-(7, 'Técnico1', '12345678-0', '0614-050207-107-9'),
-(8, 'Marlene Alvarado', '04493581-0', '0614-150195-107-7'),
-(9, 'Oscar Ortiz', '12323232', '23232323'),
-(10, 'Recursos Humanos', '22222222-5', '0614-010101-107-9'),
-(11, 'Prueba', '11111111-1', '1111-111111-111-1');
-
 -- --------------------------------------------------------
 
 --
@@ -269,15 +229,6 @@ CREATE TABLE `tblsolsuplemento` (
   `cantidad` int(11) NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tblsolsuplemento`
---
-
-INSERT INTO `tblsolsuplemento` (`idsolicitud`, `idpersona`, `idtipo`, `idmaterial`, `fecha`, `cantidad`, `estado`) VALUES
-(1, 1, 1, 2, '2018-05-04', 3, 1),
-(2, 1, 1, 2, '2018-05-22', 1, 1),
-(3, 1, 1, 1, '2018-05-22', 5, 1);
 
 -- --------------------------------------------------------
 
@@ -341,17 +292,6 @@ CREATE TABLE `tblusuario` (
   `activo` int(11) NOT NULL,
   `cambio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tblusuario`
---
-
-INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `activo`, `cambio`) VALUES
-(1, 1, 1, 'soporte2@servicelsv.net', 'Guill3rmo$', 1, 1),
-(2, 6, 1, 'soporte@servicelsv.net', '$ervicel', 1, 0),
-(3, 7, 3, 'tecnico1@servicelsv.net', '123', 1, 0),
-(4, 8, 1, 'mar.alvarado@servicelsv.net', '456', 1, 0),
-(5, 10, 2, 'recursos@servicelsv.net', '123', 1, 0);
 
 --
 -- Índices para tablas volcadas
@@ -455,13 +395,13 @@ ALTER TABLE `tblusuario`
 -- AUTO_INCREMENT de la tabla `tblboleta`
 --
 ALTER TABLE `tblboleta`
-  MODIFY `idboleta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `idboleta` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tblcita`
 --
 ALTER TABLE `tblcita`
-  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tblestado`
@@ -497,7 +437,7 @@ ALTER TABLE `tblmotivo`
 -- AUTO_INCREMENT de la tabla `tblpersona`
 --
 ALTER TABLE `tblpersona`
-  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
@@ -509,7 +449,7 @@ ALTER TABLE `tblsolicitud`
 -- AUTO_INCREMENT de la tabla `tblsolsuplemento`
 --
 ALTER TABLE `tblsolsuplemento`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tbltiposolicitud`
@@ -527,7 +467,7 @@ ALTER TABLE `tbltipousuario`
 -- AUTO_INCREMENT de la tabla `tblusuario`
 --
 ALTER TABLE `tblusuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
