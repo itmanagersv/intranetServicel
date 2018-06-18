@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-06-2018 a las 16:01:43
+-- Tiempo de generación: 18-06-2018 a las 21:11:51
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -184,6 +184,92 @@ CREATE TABLE `tblpersona` (
   `nit` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `tblpersona`
+--
+
+INSERT INTO `tblpersona` (`idpersona`, `nombre`, `dui`, `nit`) VALUES
+(1, ' Alexander Oliver Vanegas De La O', '04608200-8', '06170205921057\r'),
+(2, ' Alvaro Mauricio Chavez', '03974271-0', '06082108881010\r'),
+(3, ' Anibal Eduardo  Rivas', '03960211-4', '06142706881450\r'),
+(4, ' Aristides Antonio Monterroza Velasco', '01579734-5', '08160808841025\r'),
+(5, ' Carlos Dennis Ayala Torres', '04886985-4', '06142802941308\r'),
+(6, ' Carlos Francisco Benavides Benavides', '02740814-8', '06140912841071\r'),
+(7, ' Carlos Mauricio Barrera Cruz', '04725411-1', '06143011921369\r'),
+(8, ' Cesar Emilio Valladares Reyes', '03439402-5', '06141601861504\r'),
+(9, ' Cesar Mauricio Rodriguez Rivas', '02050877-7', '10032309761011\r'),
+(10, ' Cesar Rolando Hidalgo Fuentes', '05048270-7', '06142108941163\r'),
+(11, ' Cesia Ethel Ramirez Martinez', '03685998-2', '06142401871218\r'),
+(12, ' Christian Javier Santos Mendez', '04505985-8', '08051011801016\r'),
+(13, ' Claudia Maria Azucena Dominguez', '00483023-7', '06142003751164\r'),
+(14, ' Daniel Alberto Corena Campos', '04718654-6', '06122111921016\r'),
+(15, ' David Emmanuel Hernandez Serrano', '04362413-6', '06162609901022\r'),
+(16, ' David Alfredo Guzman Zepeda', '04081314-2', '08132411881027\r'),
+(17, ' David Enrique Lobato Juarez', '03609757-2', '06142509861308\r'),
+(18, ' Dennis Alexander Cortez Bolaños', '05415898-6', '06140208951279\r'),
+(19, ' Edwin Bladimir Orellana', '02252192-5', '08062502751012\r'),
+(20, ' Eric Samuel  Campos', '00416936-9', '05111202791039\r'),
+(21, ' Erika Lissette Vargas Menjivar', '03312483-3', '06141509851454\r'),
+(22, ' Hector Eduardo Esquivel', '03859360-5', '06141612871366\r'),
+(23, ' Herbert Adonay Valle Vela', '03775413-5', '06141108871320\r'),
+(24, ' Hilda Arely Almendaño Contreras', '03335270-3', '06141210851156\r'),
+(25, ' Hilda Victoria Linares', '02133562-2', '02012006601028\r'),
+(26, ' Isai Natanael Fuentes Santos', '03419137-0', '13211209841010\r'),
+(27, ' Jaime Alexander Rodriguez Deodanes', '04468496-9', '06101511901017\r'),
+(28, ' Jairo Alexander Ramos Ayala', '04791568-6', '06121902931019\r'),
+(29, ' Javier Alexander Funes Zavaleta', '04704563-5', '06150110921024\r'),
+(30, ' Jeffry Alexander Villalobos Viscarra', '05086418-7', '06142406941672\r'),
+(31, ' Jerry Everardo Landaverde Huezo', '04186287-7', '06142810891433\r'),
+(32, ' Jonathan Ediberto Santos Ramirez', '04907219-1', '07100909931010\r'),
+(33, ' Jonathan Eduardo Garcia Mendoza', '04335436-7', '06141807901227\r'),
+(34, ' Jorge Alberto Sandoval Lopez', '03289979-0', '06142008831379\r'),
+(35, ' Jorge Alexander Mayorga Hernandez', '00791667-6', '06142604811407\r'),
+(36, ' Jose Francisco Galvez Barahona', '04147767-2', '06140209891210\r'),
+(37, ' Jose Alfredo Villareal', '01637169-7', '11232506841046\r'),
+(38, ' Jose Gustavo Acuña Reyes', '04421401-5', '01070803911012\r'),
+(39, ' Jose Ivan Argueta Arita', '04431437-8', '06141603911355\r'),
+(40, ' Josue  Esau Perez Escalante', '05147711-1', '05150505941047\r'),
+(41, ' Juan Carlos Arevalo Ramirez', '02939028-6', '08212709690015\r'),
+(42, ' Julio Cesar Lemus Miranda', '04409060-7', '06140506891041\r'),
+(43, ' Karenlyn Suyapa Aguilar', '02309154-1', '06141711761203\r'),
+(44, ' Karen Lisseth Garcia Rosales', '05570073-6', '06111807971032\r'),
+(45, ' Katherine Giselle Escobar Carranza', '05010431-7', '06140206941454\r'),
+(46, ' Kevin Anderson Ventura Ochoa', '05538725-3', '06140505971459\r'),
+(47, ' Kevin Humberto Rivera Espinoza', '05485317-0', '02102301971162\r'),
+(48, ' Kevin Josue Elias Serrano', '05317366-6', '06140202961361\r'),
+(49, ' Kimberli Patricia Martinez Ponce', '05612808-4', '06080106971051\r'),
+(50, ' Luis Guillermo Martinez Abrego', '04493581-5', '06140109911079\r'),
+(51, ' Manuel Antonio Mata Perez', '03920657-8', '05031604881030\r'),
+(52, ' Maria Del Carmen Garcia Diaz', '01500823-3', '11150607761012\r'),
+(53, ' Maria Elena Landaverde Velasco', '04878961-4', '06062612931035\r'),
+(54, ' Mario Roberto Cortez Mejia', '00341474-5', '06141802711209\r'),
+(55, ' Marlon Alonso Alvarenga Dominguez', '04465645-3', '06142106911640\r'),
+(56, ' Mercedes Leonor Gongora Regalado', '03138805-9', '06140310821401\r'),
+(57, ' Miguel De Jesus Cabrera Deodanes', '04618441-0', '06121802911037\r'),
+(58, ' Monica Briseyda Perez Amaya', '04317347-8', '06142506901210\r'),
+(59, ' Nestor Antonio Hernandez Bonilla', '05392733-2', '06141108961109\r'),
+(60, ' Nidia Jamileth Lopez Santana', '05256338-9', '05080310951023\r'),
+(61, ' Oscar Adalberto Garcia Sanchez', '04786513-2', '09031903931014\r'),
+(62, ' Oscar Alexander Ardon Vaquerano', '05403181-7', '06141802971359\r'),
+(63, ' Oscar Armando Merino Gonzalez', '04386946-9', '06141703901306\r'),
+(64, ' Oscar Armando Maldonado Martinez', '04041145-3', '06142809881505\r'),
+(65, ' Oscar Gerardo Lopez Belloso', '00456595-5', '05111702831029\r'),
+(66, ' Osmin Antonio Ascencio Cornejo', '00508193-8', '06141703741074\r'),
+(67, ' Ottoniel Divan Catota Luna', '04292341-4', '06140206901320\r'),
+(68, ' Pedro Frederic Ramirez Cordero', '04000982-4', '06142110881062\r'),
+(69, ' Pedro Jaime Mejia Alfaro', '04842372-1', '07101307931016\r'),
+(70, ' Raquel Abigail Torres Quijada', '05086519-1', '06020806941037\r'),
+(71, ' Raul Isaias Garcia Henriquez', '04126192-4', '06172207891034\r'),
+(72, ' Reyna Guadalupe Alvarado', '01964910-4', '07020404841021\r'),
+(73, ' Saul Rigoberto Barrera Rolin', '04724709-1', '06160510921010\r'),
+(74, ' Simeon Vasquez De Leon', '01070508-4', '06153105781035\r'),
+(75, ' Vanessa Jesus Serrano Ruiz', '05173409-2', '06142305951073\r'),
+(76, ' Veronica Del Transito Castillo', '01593565-0', '06141708760066\r'),
+(77, ' Walter David Asensio Mendoza', '01178299-0', '01012603841036\r'),
+(78, ' William Efren Rojas Flores', '02870367-2', '06142903851156\r'),
+(79, ' Wilmer Stember Gomez Rivas', '00679581-5', '06070804731016\r'),
+(80, ' Yessica Magaly Rodriguez De Gomez', '01635977-6', '09042904831015\r');
+
 -- --------------------------------------------------------
 
 --
@@ -275,7 +361,9 @@ INSERT INTO `tbltipousuario` (`idtipo`, `nombretipo`) VALUES
 (8, 'Bodega'),
 (9, 'Logística'),
 (10, 'Claims'),
-(11, 'Control de Calidad');
+(11, 'Control de Calidad'),
+(12, 'Recepción'),
+(13, 'Atención al cliente');
 
 -- --------------------------------------------------------
 
@@ -292,6 +380,92 @@ CREATE TABLE `tblusuario` (
   `activo` int(11) NOT NULL,
   `cambio` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tblusuario`
+--
+
+INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `activo`, `cambio`) VALUES
+(1, 1, 3, 'tecnico05@servicelsv.net', '123', 1, 0),
+(2, 2, 3, 'tecnico03@servicelsv.net', '123', 1, 0),
+(3, 3, 3, 'anibal.rivas@servicelsv.net', '123', 1, 0),
+(4, 4, 3, 'aristides.monterroza@servicelsv.net', '123', 1, 0),
+(5, 5, 3, 'dennis.cortez@servicelsv.net', '123', 1, 0),
+(6, 6, 8, 'carlos.benavides@servicelsv.net', '123', 1, 0),
+(7, 7, 5, 'carlos.barrera@servicelsv.net', '123', 1, 0),
+(8, 8, 3, 'cesar.valladares@servicelsv.net', '123', 1, 0),
+(9, 9, 4, 'supervisor02@servicelsv.net', '123', 1, 0),
+(10, 10, 5, 'cesar.hidalgo@servicelsv.net', '123', 1, 0),
+(11, 11, 7, 'conta.aux@servicelsv.net', '123', 1, 0),
+(12, 12, 3, 'taller.olimpica01@servicelsv.net', '123', 1, 0),
+(13, 13, 9, 'claudia.azucena@servicelsv.net', '123', 1, 0),
+(14, 14, 4, 'daniel.corena@servicelsv.net', '123', 1, 0),
+(15, 15, 5, 'david.hernandez@servicelsv.net', '123', 1, 0),
+(16, 16, 5, 'no tiene', '123', 1, 0),
+(17, 17, 9, 'david.lobato@servicelsv.net', '123', 1, 0),
+(18, 18, 3, 'dennis.cortez@servicelsv.net', '123', 1, 0),
+(19, 19, 9, 'edwin.orellana@servicelsv.net', '123', 1, 0),
+(20, 20, 8, 'eric.campos@servicelsv.net', '123', 1, 0),
+(21, 21, 10, 'claims@servicelsv.net', '123', 1, 0),
+(22, 22, 3, 'hector.esquivel@servicelsv.net', '123', 1, 0),
+(23, 23, 3, 'herbert.valle@servicelsv.net', '123', 1, 0),
+(24, 24, 9, 'arely.almendano@servicelsv.net', '123', 1, 0),
+(25, 25, 3, 'no tiene', '123', 1, 0),
+(26, 26, 9, 'tigo.sanmiguel@servicelsv.net', '123', 1, 0),
+(27, 27, 3, 'jaime.rodriguez@servicelsv.net', '123', 1, 0),
+(28, 28, 3, 'jairo.ramos@servicelsv.net', '123', 1, 0),
+(29, 29, 11, 'control.calidad@servicelsv.net', '123', 1, 0),
+(30, 30, 3, 'jeffry.villalobos@servicelsv.net', '123', 1, 0),
+(31, 31, 3, 'jerry.landaverde@servicelsv.net', '123', 1, 0),
+(32, 32, 7, 'cuenta.pagar@servicelsv.net', '123', 1, 0),
+(33, 33, 8, 'jonathan.garcia@servicelsv.net', '123', 1, 0),
+(34, 34, 3, 'no tiene', '123', 1, 0),
+(35, 35, 11, 'jorge.mayorga@servicelsv.net', '123', 1, 0),
+(36, 36, 1, 'soporte@servicelsv.net', '123', 1, 0),
+(37, 37, 5, 'supervisor01@servicelsv.net', '123', 1, 0),
+(38, 38, 3, 'control.calidad02@servicelsv.net', '123', 1, 0),
+(39, 39, 3, 'no tiene', '123', 1, 0),
+(40, 40, 5, 'josue.escalante@servicelsv.net', '123', 1, 0),
+(41, 41, 7, 'conta.costos@servicelsv.net', '123', 1, 0),
+(42, 42, 3, 'tecnico01@servicelsv.net', '123', 1, 0),
+(43, 43, 12, 'recepcion@servicelsv.net', '123', 1, 0),
+(44, 44, 3, 'tecnico06@servicelsv.net', '123', 1, 0),
+(45, 45, 13, 'atencionalclientesv@servicelsv.net', '123', 1, 0),
+(46, 46, 11, 'kevin.ventura@servicelsv.net', '123', 1, 0),
+(47, 47, 9, 'tigo.santaana@servicelsv.net', '123', 1, 0),
+(48, 48, 3, 'kevin.elias@servicelsv.net', '123', 1, 0),
+(49, 49, 13, 'patricia.ponce@servicelsv.net', '123', 1, 0),
+(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 0),
+(51, 51, 11, 'manuel.mata@servicelsv.net', '123', 1, 0),
+(52, 52, 2, 'recursoshumanos@servicelsv.net', '123', 1, 0),
+(53, 53, 3, 'maria.landaverde@servicelsv.net', '123', 1, 0),
+(54, 54, 6, 'gerencia.operaciones@servicelsv.net', '123', 1, 0),
+(55, 55, 3, 'marlon.alvarenga@servicelsv.net', '123', 1, 0),
+(56, 56, 5, 'mercedes.gongora@servicelsv.net', '123', 1, 0),
+(57, 57, 3, 'miguel.cabrera@servicelsv.net', '123', 1, 0),
+(58, 58, 9, 'monica.perez@servicelsv.net', '123', 1, 0),
+(59, 59, 5, 'nestor.bonilla@servicelsv.net', '123', 1, 0),
+(60, 60, 9, 'logistica01@servicelsv.net', '123', 1, 0),
+(61, 61, 8, 'oscar.garcia@servicelsv.net', '123', 1, 0),
+(62, 62, 3, 'oscar.alexander@servicelsv.net', '123', 1, 0),
+(63, 63, 3, 'oscar.merino@servicelsv.net', '123', 1, 0),
+(64, 64, 3, 'oscar.maldonado@servicelsv.net', '123', 1, 0),
+(65, 65, 4, 'jefatura.qc@servicelsv.net', '123', 1, 0),
+(66, 66, 3, 'no tiene', '123', 1, 0),
+(67, 67, 3, 'control.calidad01@servicelsv.net', '123', 1, 0),
+(68, 68, 3, 'tigo.lagranvia@servicelsv.net', '123', 1, 0),
+(69, 69, 9, 'jaime.mejia@servicelsv.net', '123', 1, 0),
+(70, 70, 3, 'no tiene', '123', 1, 0),
+(71, 71, 3, 'raul.garcia@servicelsv.net', '123', 1, 0),
+(72, 72, 6, 'reyna.alvarado@servicelsv.net', '123', 1, 0),
+(73, 73, 3, 'saul.barrera@servicelsv.net', '123', 1, 0),
+(74, 74, 4, 'simeon.vasquez@servicelsv.net', '123', 1, 0),
+(75, 75, 3, 'vanessa.ruiz@servicelsv.net', '123', 1, 0),
+(76, 76, 8, 'jefatura.inv@servicelsv.net', '123', 1, 0),
+(77, 77, 9, 'walter.asencio@servicelsv.net', '123', 1, 0),
+(78, 78, 9, 'william.rojas@servicelsv.net', '123', 1, 0),
+(79, 79, 3, 'wilmer.gomez@servicelsv.net', '123', 1, 0),
+(80, 80, 7, 'conta.compras@servicelsv.net', '123', 1, 0);
 
 --
 -- Índices para tablas volcadas
@@ -437,7 +611,7 @@ ALTER TABLE `tblmotivo`
 -- AUTO_INCREMENT de la tabla `tblpersona`
 --
 ALTER TABLE `tblpersona`
-  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idpersona` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
@@ -461,13 +635,13 @@ ALTER TABLE `tbltiposolicitud`
 -- AUTO_INCREMENT de la tabla `tbltipousuario`
 --
 ALTER TABLE `tbltipousuario`
-  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `tblusuario`
 --
 ALTER TABLE `tblusuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- Restricciones para tablas volcadas
