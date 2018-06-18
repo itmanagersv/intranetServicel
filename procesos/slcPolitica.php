@@ -14,6 +14,18 @@ if (isset($_REQUEST['btnSeleccionar'])){
             </script>'; 
             break;
 
+        case '2':
+
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1gaEQ__jNJHjK4n9qeYg1Dml3VEYkHgZf/view?usp=sharing");
+            </script>'; 
+           break;
+
+        case '3':
+
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1zyHZxmrcWLWBkSXOAqgSSdhDm-t_c9Gw/view?usp=sharing");
+            </script>'; 
+            break;
+
         default:
             break;
 

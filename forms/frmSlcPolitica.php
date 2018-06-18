@@ -33,7 +33,8 @@ $interfaz->body();
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                     <select name="slcPolitica" id="slcPolitica" class="form-control">
 					    <option value="0">Selecccionar políticas a visualizar</option>
-                        <option value="1">Prueba política</option>
+                        <option value="1">Politica bienvenida Servicel</option>
+                        <option value="2">Politica de Inspección de Garantía</option>
                     </select>
                 </div>
                 <br>
