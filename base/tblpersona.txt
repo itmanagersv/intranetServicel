@@ -1,0 +1,80 @@
+1	 Alexander Oliver Vanegas De La O	04608200-8	06170205921057
+2	 Alvaro Mauricio Chavez	03974271-0	06082108881010
+3	 Anibal Eduardo  Rivas	03960211-4	06142706881450
+4	 Aristides Antonio Monterroza Velasco	01579734-5	08160808841025
+5	 Carlos Dennis Ayala Torres	04886985-4	06142802941308
+6	 Carlos Francisco Benavides Benavides	02740814-8	06140912841071
+7	 Carlos Mauricio Barrera Cruz	04725411-1	06143011921369
+8	 Cesar Emilio Valladares Reyes	03439402-5	06141601861504
+9	 Cesar Mauricio Rodriguez Rivas	02050877-7	10032309761011
+10	 Cesar Rolando Hidalgo Fuentes	05048270-7	06142108941163
+11	 Cesia Ethel Ramirez Martinez	03685998-2	06142401871218
+12	 Christian Javier Santos Mendez	04505985-8	08051011801016
+13	 Claudia Maria Azucena Dominguez	00483023-7	06142003751164
+14	 Daniel Alberto Corena Campos	04718654-6	06122111921016
+15	 David Emmanuel Hernandez Serrano	04362413-6	06162609901022
+16	 David Alfredo Guzman Zepeda	04081314-2	08132411881027
+17	 David Enrique Lobato Juarez	03609757-2	06142509861308
+18	 Dennis Alexander Cortez Bolaños	05415898-6	06140208951279
+19	 Edwin Bladimir Orellana	02252192-5	08062502751012
+20	 Eric Samuel  Campos	00416936-9	05111202791039
+21	 Erika Lissette Vargas Menjivar	03312483-3	06141509851454
+22	 Hector Eduardo Esquivel	03859360-5	06141612871366
+23	 Herbert Adonay Valle Vela	03775413-5	06141108871320
+24	 Hilda Arely Almendaño Contreras	03335270-3	06141210851156
+25	 Hilda Victoria Linares	02133562-2	02012006601028
+26	 Isai Natanael Fuentes Santos	03419137-0	13211209841010
+27	 Jaime Alexander Rodriguez Deodanes	04468496-9	06101511901017
+28	 Jairo Alexander Ramos Ayala	04791568-6	06121902931019
+29	 Javier Alexander Funes Zavaleta	04704563-5	06150110921024
+30	 Jeffry Alexander Villalobos Viscarra	05086418-7	06142406941672
+31	 Jerry Everardo Landaverde Huezo	04186287-7	06142810891433
+32	 Jonathan Ediberto Santos Ramirez	04907219-1	07100909931010
+33	 Jonathan Eduardo Garcia Mendoza	04335436-7	06141807901227
+34	 Jorge Alberto Sandoval Lopez	03289979-0	06142008831379
+35	 Jorge Alexander Mayorga Hernandez	00791667-6	06142604811407
+36	 Jose Francisco Galvez Barahona	04147767-2	06140209891210
+37	 Jose Alfredo Villareal	01637169-7	11232506841046
+38	 Jose Gustavo Acuña Reyes	04421401-5	01070803911012
+39	 Jose Ivan Argueta Arita	04431437-8	06141603911355
+40	 Josue  Esau Perez Escalante	05147711-1	05150505941047
+41	 Juan Carlos Arevalo Ramirez	02939028-6	08212709690015
+42	 Julio Cesar Lemus Miranda	04409060-7	06140506891041
+43	 Karenlyn Suyapa Aguilar	02309154-1	06141711761203
+44	 Karen Lisseth Garcia Rosales	05570073-6	06111807971032
+45	 Katherine Giselle Escobar Carranza	05010431-7	06140206941454
+46	 Kevin Anderson Ventura Ochoa	05538725-3	06140505971459
+47	 Kevin Humberto Rivera Espinoza	05485317-0	02102301971162
+48	 Kevin Josue Elias Serrano	05317366-6	06140202961361
+49	 Kimberli Patricia Martinez Ponce	05612808-4	06080106971051
+50	 Luis Guillermo Martinez Abrego	04493581-5	06140109911079
+51	 Manuel Antonio Mata Perez	03920657-8	05031604881030
+52	 Maria Del Carmen Garcia Diaz	01500823-3	11150607761012
+53	 Maria Elena Landaverde Velasco	04878961-4	06062612931035
+54	 Mario Roberto Cortez Mejia	00341474-5	06141802711209
+55	 Marlon Alonso Alvarenga Dominguez	04465645-3	06142106911640
+56	 Mercedes Leonor Gongora Regalado	03138805-9	06140310821401
+57	 Miguel De Jesus Cabrera Deodanes	04618441-0	06121802911037
+58	 Monica Briseyda Perez Amaya	04317347-8	06142506901210
+59	 Nestor Antonio Hernandez Bonilla	05392733-2	06141108961109
+60	 Nidia Jamileth Lopez Santana	05256338-9	05080310951023
+61	 Oscar Adalberto Garcia Sanchez	04786513-2	09031903931014
+62	 Oscar Alexander Ardon Vaquerano	05403181-7	06141802971359
+63	 Oscar Armando Merino Gonzalez	04386946-9	06141703901306
+64	 Oscar Armando Maldonado Martinez	04041145-3	06142809881505
+65	 Oscar Gerardo Lopez Belloso	00456595-5	05111702831029
+66	 Osmin Antonio Ascencio Cornejo	00508193-8	06141703741074
+67	 Ottoniel Divan Catota Luna	04292341-4	06140206901320
+68	 Pedro Frederic Ramirez Cordero	04000982-4	06142110881062
+69	 Pedro Jaime Mejia Alfaro	04842372-1	07101307931016
+70	 Raquel Abigail Torres Quijada	05086519-1	06020806941037
+71	 Raul Isaias Garcia Henriquez	04126192-4	06172207891034
+72	 Reyna Guadalupe Alvarado	01964910-4	07020404841021
+73	 Saul Rigoberto Barrera Rolin	04724709-1	06160510921010
+74	 Simeon Vasquez De Leon	01070508-4	06153105781035
+75	 Vanessa Jesus Serrano Ruiz	05173409-2	06142305951073
+76	 Veronica Del Transito Castillo	01593565-0	06141708760066
+77	 Walter David Asensio Mendoza	01178299-0	01012603841036
+78	 William Efren Rojas Flores	02870367-2	06142903851156
+79	 Wilmer Stember Gomez Rivas	00679581-5	06070804731016
+80	 Yessica Magaly Rodriguez De Gomez	01635977-6	09042904831015
