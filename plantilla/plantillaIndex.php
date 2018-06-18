@@ -36,6 +36,7 @@ class plantilla{
     
         <!-- Custom styles for this template -->
         <link href="css/freelancer.min.css" rel="stylesheet">
+        <link href="css/imgModal.css" rel="stylesheet">
     
         </head>';
 
@@ -83,7 +84,25 @@ class plantilla{
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
                 </div>
                 </header>
-                
+
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
+
+                <script src="js/imgModal.js"></script>
+
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
                     <div id="accordion">
@@ -344,6 +363,24 @@ class plantilla{
                     <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
                 </div>
                 </header>
+
+                <!-- Trigger the Modal -->
+                <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+                </div>
+
+                <script src="js/imgModal.js"></script>
                 
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
@@ -594,6 +631,24 @@ class plantilla{
                         <h2 class="font-weight-light mb-0">Servicel Corporation</h2>
                     </div>
                     </header>
+
+                    <!-- Trigger the Modal -->
+                    <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    </div>
+
+                    <script src="js/imgModal.js"></script>
                 
                     <!-- Portfolio Grid Section -->
                     <section class="portfolio" id="portfolio">
