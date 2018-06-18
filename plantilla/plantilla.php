@@ -21,6 +21,9 @@ class plantilla{
                 <meta name="author" content="">
             
                 <title>Servicel El Salvador</title>
+
+                <!-- Icono tab -->
+                <link rel="icon" href="../img/svg/logoTab.png">
                 
                 <!-- Bootstrap core CSS -->
                 <link rel="stylesheet" href="../css/bootstrap.min.css">
