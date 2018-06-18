@@ -12,10 +12,14 @@ $interfaz->body();
 <body>
 <script Language="JavaScript">
         function validate(){
-            var cmb1 = document.getElementById("slcTipo").value;
-            var cmb2 = document.getElementById("slcMotivo").value;
-            if(cmb1==0 || cmb2==0){
+            var pass = document.getElementById("txtpass").value;
+            var pass2 = document.getElementById("txtpass2").value;
+            if(pass==0 || pass2==0){
                 alert("Por favor completar los campos requeridos");
+                return false;
+            }
+            if(pass != pass2){
+                alert("La contraseñas no coinciden");
                 return false;
             }
         }
@@ -52,7 +56,7 @@ $interfaz->body();
                     <input type="password" class="form-control" id="txtpass2" name="txtpass2" placeholder="Confirmar contraseña" value="<?=$txtpass?>">
                 </div>
                 <br>
-                    <button type="submit" class="btn btn-primary btnGuardar" name="btnGuardar">Guardar</button>
+                    <button type="submit" class="btn btn-primary btnGuardar" name="btnGuardar" onclick="return validate()">Guardar</button>
             </form>
         </div>
     </div><!--Fin row3-->
