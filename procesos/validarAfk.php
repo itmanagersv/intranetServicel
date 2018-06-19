@@ -1,6 +1,6 @@
 <?php
 // 2 hours in seconds
-$inactive = 10; 
+$inactive = 900; 
 ini_set('session.gc_maxlifetime', $inactive); // set the session max lifetime to 2 hours
 
 //session_start();
