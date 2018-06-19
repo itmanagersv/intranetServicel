@@ -3,6 +3,7 @@
 <?php
 session_start();
 include('../clases/sesion.php');
+include('../procesos/validarAfk.php');
 include ('../plantilla/plantillaLogin.php');
 include('../procesos/primerAcceso.php');
 $interfaz = new plantilla($user,$dir);

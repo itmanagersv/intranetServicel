@@ -4,6 +4,7 @@
 <?php
     session_start();
     include('clases/sesion.php');
+    include('procesos/validarAfk.php');
     include ('plantilla/plantillaIndex.php');
     $interfaz = new plantilla($user,$dir);
     $interfaz->header();

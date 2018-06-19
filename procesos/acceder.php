@@ -46,7 +46,7 @@ if (isset($_REQUEST['btnIngresar']))
             		    }
 
                         if (($rol == 1 || $rol == 2 || $rol == 3 || $rol == 4 || $rol == 5 || $rol == 6 || $rol == 7 || $rol == 8 || $rol == 9 
-                        || $rol == 10 || $rol == 11) && $cambio != 0){
+                        || $rol == 10 || $rol == 11 || $rol == 12 || $rol == 13) && $cambio != 0){
 
                                 header("location:../index.php");
 
