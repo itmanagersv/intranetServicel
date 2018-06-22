@@ -3,6 +3,7 @@
 <?php
 session_start();
 include('../clases/sesion.php');
+include('../procesos/validarAfk.php');
 include ('../plantilla/plantilla.php');
 include('../procesos/solicitud.php');
 include('../procesos/validarActivo.php');
