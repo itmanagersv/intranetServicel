@@ -18,7 +18,7 @@ switch($tabla){
     print '<script type="text/javascript" src="../js/listar.js"></script>
               <table class="table table-condensed table-hover" id="lista"><thead >
               <tr>
-                  <th>Código</th>
+                  <th>Códigos</th>
                   <th>Empleado</th>
                   <th>Solicitud</th>
                   <th>Motivo</th>
