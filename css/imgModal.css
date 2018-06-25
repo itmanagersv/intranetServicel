@@ -72,9 +72,10 @@
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+.carousel-inner {
+    background-color: rgb(34, 33, 33);
+}
+
+#demo {
+    margin-bottom: -95px;   
 }

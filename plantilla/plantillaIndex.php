@@ -85,23 +85,50 @@ class plantilla{
                 </div>
                 </header>
 
-                <!-- Trigger the Modal -->
-                <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
 
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <center>
+                                <img src="img/svg/mision.png" width="600px" height="450px">
+                            </center>  
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/vision.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/valores.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/organigrama.png" width="800px" height="450px">
+                            </center>
+                        </div>
+                    </div>
 
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
 
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
                 </div>
-
-                <script src="js/imgModal.js"></script>
 
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
@@ -364,23 +391,50 @@ class plantilla{
                 </div>
                 </header>
 
-                <!-- Trigger the Modal -->
-                <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
 
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <center>
+                                <img src="img/svg/mision.png" width="600px" height="450px">
+                            </center>  
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/vision.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/valores.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/organigrama.png" width="800px" height="450px">
+                            </center>
+                        </div>
                 </div>
 
-                <script src="js/imgModal.js"></script>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
                 
                 <!-- Portfolio Grid Section -->
                 <section class="portfolio" id="portfolio">
@@ -632,23 +686,50 @@ class plantilla{
                     </div>
                     </header>
 
-                    <!-- Trigger the Modal -->
-                    <img id="myImg" src="img/svg/mision.jpg" alt="Misión" style="width:100%;max-width:300px">
+                    <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                        <li data-target="#demo" data-slide-to="3"></li>
+                    </ul>
 
-                    <!-- The Close Button -->
-                    <span class="close">&times;</span>
-
-                    <!-- Modal Content (The Image) -->
-                    <img class="modal-content" id="img01">
-
-                    <!-- Modal Caption (Image Text) -->
-                    <div id="caption"></div>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <center>
+                                <img src="img/svg/mision.png" width="600px" height="450px">
+                            </center>  
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/vision.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/valores.png" width="600px" height="450px">
+                            </center>
+                        </div>
+                        <div class="carousel-item">
+                            <center>
+                                <img src="img/svg/organigrama.png" width="800px" height="450px">
+                            </center>
+                        </div>
                     </div>
 
-                    <script src="js/imgModal.js"></script>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
                 
                     <!-- Portfolio Grid Section -->
                     <section class="portfolio" id="portfolio">
