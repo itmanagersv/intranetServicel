@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2018 a las 21:40:26
+-- Tiempo de generación: 26-06-2018 a las 18:26:22
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -112,16 +112,17 @@ INSERT INTO `tblhora` (`idhora`, `hora`) VALUES
 
 CREATE TABLE `tblmaterial` (
   `idmaterial` int(11) NOT NULL,
-  `material` varchar(50) NOT NULL
+  `material` varchar(50) NOT NULL,
+  `stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `tblmaterial`
 --
 
-INSERT INTO `tblmaterial` (`idmaterial`, `material`) VALUES
-(1, 'Papel bond'),
-(2, 'Engrapadora');
+INSERT INTO `tblmaterial` (`idmaterial`, `material`, `stock`) VALUES
+(1, 'Papel bond', 5),
+(2, 'Engrapadora', 5);
 
 -- --------------------------------------------------------
 
@@ -224,7 +225,7 @@ INSERT INTO `tblpersona` (`idpersona`, `nombre`, `dui`, `nit`) VALUES
 (33, ' Jonathan Garcia', '04335436-7', '06141807901227\r'),
 (34, ' Jorge Sandoval', '03289979-0', '06142008831379\r'),
 (35, ' Jorge Mayorga', '00791667-6', '06142604811407\r'),
-(36, ' Jose Galvez', '04147767-2', '06140209891210\r'),
+(36, 'Francisco Galvez', '04147767-2', '06140209891210\r'),
 (37, ' Alfredo Villareal', '01637169-7', '11232506841046\r'),
 (38, ' Jose Acuña', '04421401-5', '01070803911012\r'),
 (39, ' Jose Argueta', '04431437-8', '06141603911355\r'),
@@ -285,20 +286,6 @@ CREATE TABLE `tblsolicitud` (
   `idmotivo` int(11) NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `tblsolicitud`
---
-
-INSERT INTO `tblsolicitud` (`idsolicitud`, `idpersona`, `idtipo`, `fecha`, `comentario`, `idmotivo`, `estado`) VALUES
-(9, 6, 1, '2018-04-27', 'Hola', 1, 0),
-(93, 1, 1, '2018-05-02', 'Prueba estado', 1, 1),
-(94, 1, 1, '2018-05-02', 'Prueba correo', 2, 1),
-(95, 1, 1, '2018-05-02', 'Prueba correo', 2, 1),
-(96, 1, 2, '2018-05-02', 'Prueba borrado', 1, 1),
-(99, 1, 1, '2018-05-08', '23232', 1, 1),
-(100, 1, 2, '2018-05-29', 'Prueba lunes', 1, 1),
-(101, 1, 2, '2018-06-05', 'bvfgfgfg', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -435,7 +422,7 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (47, 47, 9, 'tigo.santaana@servicelsv.net', '123', 1, 0),
 (48, 48, 3, 'kevin.elias@servicelsv.net', '123', 1, 0),
 (49, 49, 13, 'patricia.ponce@servicelsv.net', '123', 1, 0),
-(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 0),
+(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 1),
 (51, 51, 11, 'manuel.mata@servicelsv.net', '123', 1, 0),
 (52, 52, 2, 'recursoshumanos@servicelsv.net', '123', 1, 0),
 (53, 53, 3, 'maria.landaverde@servicelsv.net', '123', 1, 0),
@@ -617,7 +604,7 @@ ALTER TABLE `tblpersona`
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
 --
 ALTER TABLE `tblsolicitud`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolsuplemento`
