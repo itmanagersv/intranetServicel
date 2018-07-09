@@ -16,26 +16,47 @@ if (isset($_REQUEST['btnGuardar'])){
     $rsMostrar =  $bdConexion->ejecutarSql($sqlConsulta);
     $fila = mysqli_fetch_array($rsMostrar);
     $activo = $fila["activo"];
-                if ($activo == 0 ){
+                if ($activo == 0){
                     session_destroy();                        
                     header("location:../forms/frmLogin.php");
                 }else{
                     if ($accion=='insert'){
-                        $tabla      = "tblsolsuplemento";
-                        $campos     = "idpersona, idtipo, idmaterial, fecha, cantidad, estado";
-                        $valores    = "$idPersona, $idTipo, $slcMaterial, '$txtFecha', '$txtCantidad', '$txtestado'";
-                        $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
-                        $hCodigo = $bdConexion->retornarId();
-                        if($resultado==1){
-                            $desac          = 'disabled';
-                            print "<br><br><div class='container'>
-                                        <div class='alert alert-success alert-dismissable'>
-                                            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                                            <strong>¡Éxito!</strong> Registro guardado de forma exitosa.
-                                        </div>
-                                        </div>";
+                        $sqlConsulta = "SELECT * FROM tblmaterial";
+                        $rsMostrar =  $bdConexion->ejecutarSql($sqlConsulta);
+                        $fila = mysqli_fetch_array($rsMostrar);
+                        $cantidad = $fila["stock"];
+                        if($cantidad >= $txtCantidad){
+                            //Inserta la solicitud a la tabla tblsolsuplemento
+                            $tabla      = "tblsolsuplemento";
+                            $campos     = "idpersona, idtipo, idmaterial, fecha, cantidad, estado";
+                            $valores    = "$idPersona, $idTipo, $slcMaterial, '$txtFecha', '$txtCantidad', '$txtestado'";
+                            $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
+                            $hCodigo = $bdConexion->retornarId();
                             
-                        }
+                            //Actualiza el stock en la tabla tblmaterial
+                            $tabla		= "tblmaterial";
+                            $campos		= "stock = ($cantidad-$txtCantidad)";
+                            $condicion	= "idmaterial = $slcMaterial";
+                            $resultado  = $bdConexion->actualizarDB($tabla,$campos,$condicion);
+
+                            if($resultado==1){
+                                $desac          = 'disabled';
+                                print "<br><br><div class='container'>
+                                            <div class='alert alert-success alert-dismissable'>
+                                                <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                                                <strong>¡Éxito!</strong> Registro guardado de forma exitosa.
+                                            </div>
+                                            </div>";
+                                
+                            }
+                        }else{
+                            print "<br><br><div class='container'>
+                                            <div class='alert alert-warning alert-dismissable'>
+                                                <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                                                <strong>¡Error!</strong> Stock de suplemento insuficiente, stock actual es $cantidad.
+                                            </div>
+                                            </div>";
+                        }  
                     }
                 }  
 }//Fin de boton Guardar

@@ -53,7 +53,7 @@ $interfaz->body();
                 <br>
                 <div class="input-group" id="combobox">
                     <?php
-                            $bdConexion->llenarSelect("slcMaterial","SELECT idmaterial, material FROM tblmaterial ORDER BY material ",$slcMaterial,$tbl="tipo de suplemento");
+                            $bdConexion->llenarSelectMaterial("slcMaterial","SELECT idmaterial, material, stock FROM tblmaterial ORDER BY material ",$slcMaterial,$tbl="tipo de suplemento");
                     ?>
                 </div>
                 <div class="input-group">

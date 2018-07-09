@@ -95,6 +95,22 @@ class Conexion
 		print "</select>";
 	}//Fin de select
 
+	//METODO PARA LLENAR SELECT
+	public function llenarSelectMaterial($nombre,$sql,$indice,$tabla)
+	{
+		$rs = $this->ejecutarSql($sql);
+		print "<select name='$nombre' id='$nombre' class='form-control'>
+					<option value='0'>Selecccionar  ".$tabla."</option>";
+		while($fila=mysqli_fetch_array($rs))
+		{
+			if($fila[0]==$indice)
+				print "<option value='".$fila[0]."' selected>".$fila[1]."</option>";
+			else
+				print "<option value='".$fila[0]."'>".$fila[1].' , en stock: '.$fila[2]."</option>";
+		}
+		print "</select>";
+	}//Fin de select
+
 	public function llenarText($nombre,$sql)
 	{
 		$rs = $this->ejecutarSql($sql);
