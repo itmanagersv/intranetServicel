@@ -21,7 +21,7 @@ $interfaz->body();
             <table class="tbl">
                 <tr>
                     <td>
-                        <form action="frmMaterial.php" method="GET" >
+                        <form action="frmSolSup.php" method="GET" >
                             <button type="submit" class="btn btn-primary pull-left">Crear Solicitud</button>
                             <input type="hidden" id="tabla" name="tabla" value="tblsolsuplemento">
                             <input type="hidden" id="id" value="0">

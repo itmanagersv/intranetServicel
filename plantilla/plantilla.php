@@ -73,7 +73,7 @@ class plantilla{
                                         <a id="char" href="../forms/frmCita.php">Solicitud de cita con RRHH <span></span></a>
                                     </li>
                                     <li>
-                                        <a id="char" href="../forms/frmMaterial.php">Solicitud materiales <span></span></a>
+                                        <a id="char" href="../forms/frmSolSup.php">Solicitud materiales <span></span></a>
                                     </li>
                                     <li>
                                         <a id="char" href="../forms/frmBoleta.php">Subir boleta de pago <span></span></a>
@@ -187,7 +187,7 @@ class plantilla{
                                             <a id="char" href="../forms/frmCita.php">Solicitud de cita con RRHH <span></span></a>
                                         </li>
                                         <li>
-                                            <a id="char" href="../forms/frmMaterial.php">Solicitud materiales <span></span></a>
+                                            <a id="char" href="../forms/frmSolSup.php">Solicitud materiales <span></span></a>
                                         </li>
                                         <li>
                                             <a id="char" href="../forms/frmBoleta.php">Subir boleta de pago <span></span></a>
@@ -285,7 +285,7 @@ class plantilla{
                                             <a id="char" href="../forms/frmCita.php">Solicitud de cita con RRHH <span></span></a>
                                         </li>
                                         <li>
-                                            <a id="char" href="../forms/frmMaterial.php">Solicitud materiales <span></span></a>
+                                            <a id="char" href="../forms/frmSolSup.php">Solicitud materiales <span></span></a>
                                         </li>
                                     </ul>
                                 </li>

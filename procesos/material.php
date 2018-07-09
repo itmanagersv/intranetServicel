@@ -17,7 +17,7 @@ if (isset($_REQUEST['btnGuardar'])){
     $fila = mysqli_fetch_array($rsMostrar);
     $activo = $fila["activo"];
                 if ($activo == 0){
-                    session_destroy();                        
+                    session_destroy();
                     header("location:../forms/frmLogin.php");
                 }else{
                     if ($accion=='insert'){

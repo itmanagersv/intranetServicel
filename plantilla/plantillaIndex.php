@@ -196,7 +196,7 @@ class plantilla{
                                         <div class="row">
                                             <div class="col-sm-4 col-lg-3 col-md-3">
                                                 <div class="thumbnail">
-                                                    <a href="forms/frmMaterial.php">
+                                                    <a href="forms/frmSolSup.php">
                                                         <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
                                                             <img src="img/svg/clips.svg">
                                                                 <br>
@@ -502,7 +502,7 @@ class plantilla{
                                         <div class="row">
                                             <div class="col-sm-4 col-lg-3 col-md-3">
                                                 <div class="thumbnail">
-                                                    <a href="forms/frmMaterial.php">
+                                                    <a href="forms/frmSolSup.php">
                                                         <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
                                                             <img src="img/svg/clips.svg">
                                                                 <br>
@@ -782,7 +782,7 @@ class plantilla{
 
                                                     <div class="col-sm-4 col-lg-3 col-md-3">
                                                         <div class="thumbnail">
-                                                            <a href="forms/frmMaterial.php">
+                                                            <a href="forms/frmSolSup.php">
                                                                 <button style="width:98%;" type="button" title="Solicitud de suplementos de oficina" '.$disabled.'>
                                                                     <img src="img/svg/clips.svg">
                                                                         <br>

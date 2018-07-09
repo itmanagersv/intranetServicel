@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-06-2018 a las 18:26:22
+-- Tiempo de generación: 10-07-2018 a las 00:40:32
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -320,7 +320,9 @@ CREATE TABLE `tbltiposolicitud` (
 
 INSERT INTO `tbltiposolicitud` (`idtipo`, `nombretipo`) VALUES
 (1, 'Constancia laboral'),
-(2, 'Constancia salarial');
+(2, 'Constancia salarial'),
+(3, 'Constancia FSV'),
+(4, 'Otro');
 
 -- --------------------------------------------------------
 
@@ -616,7 +618,7 @@ ALTER TABLE `tblsolsuplemento`
 -- AUTO_INCREMENT de la tabla `tbltiposolicitud`
 --
 ALTER TABLE `tbltiposolicitud`
-  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idtipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `tbltipousuario`
@@ -628,7 +630,7 @@ ALTER TABLE `tbltipousuario`
 -- AUTO_INCREMENT de la tabla `tblusuario`
 --
 ALTER TABLE `tblusuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- Restricciones para tablas volcadas
