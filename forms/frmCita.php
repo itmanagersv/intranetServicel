@@ -64,14 +64,15 @@ $interfaz->body();
                 <br>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-comments"></i></span>
-                    <input type="textarea" class="form-control" id="txtComentario" name="txtComentario"  placeholder="Comentario" required="false" placeholder="Comentario">
+                    <input type="textarea" class="form-control" id="txtComentario" name="txtComentario"  placeholder="Comentario" placeholder="Comentario">
                 </div>
                 <div class="input-group">
                     <input type="hidden" class="form-control" id="hCodigo" name="hCodigo" placeholder="" readonly="true" value="<?=$hCodigo?>">
                 </div>
                 <br>
                     <button type="submit" class="btn btn-primary btnGuardar" name="btnGuardar" <?=$desac?> onclick="return validate()">Guardar</button>
-                    <a href="../index.php" id="btnCancelar" class="btn btn-warning">Cancelar</a>    
+                    <a href="../index.php" id="btnCancelar" class="btn btn-warning">Cancelar</a>
+                    <input type="hidden" id="accion" name="accion" value="<?=$accion?>" >   
             </form>
         </div>
     </div><!--Fin row3-->

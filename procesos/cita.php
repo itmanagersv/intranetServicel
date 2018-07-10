@@ -24,21 +24,35 @@ if (isset($_REQUEST['btnGuardar'])){
                     header("location:../forms/frmLogin.php");
                 }else{
                     if ($accion=='insert'){
-                        $tabla      = "tblcita";
-                        $campos     = "idpersona, fechasolicitud, fechacita, idhora, comentarios, idestado, visible";
-                        $valores    = "$idPersona, '$txtFechaSol', '$txtFechaCita', '$slcHora', '$txtComentario', $txtestado, $txtvisible";
-                        $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
-                        $hCodigo = $bdConexion->retornarId();
-                        if($resultado==1){
-                            $desac          = 'disabled';
+                        $sqlConsulta = "SELECT * FROM tblcita";
+                        $rsMostrar =  $bdConexion->ejecutarSql($sqlConsulta);
+                        $fila = mysqli_fetch_array($rsMostrar);
+                        $hora = $fila["idhora"];
+                        $fecha = $fila["fechacita"];
+                        if(($hora != $slcHora) && ($fecha != $txtFechaCita)){
+                            $tabla      = "tblcita";
+                            $campos     = "idpersona, fechasolicitud, fechacita, idhora, comentarios, idestado, visible";
+                            $valores    = "$idPersona, '$txtFechaSol', '$txtFechaCita', '$slcHora', '$txtComentario', $txtestado, $txtvisible";
+                            $resultado  = $bdConexion->insertarDB($tabla,$campos,$valores);
+                            $hCodigo = $bdConexion->retornarId();
+                            if($resultado==1){
+                                $desac          = 'disabled';
+                                print "<br><br><div class='container'>
+                                            <div class='alert alert-success alert-dismissable'>
+                                                <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                                                <strong>¡Éxito!</strong> Registro guardado de forma exitosa.
+                                            </div>
+                                            </div>";
+                                
+                            }
+                        }else{
                             print "<br><br><div class='container'>
-                                        <div class='alert alert-success alert-dismissable'>
-                                            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-                                            <strong>¡Éxito!</strong> Registro guardado de forma exitosa.
-                                        </div>
-                                        </div>";
-                            
-                        }
+                                            <div class='alert alert-warning alert-dismissable'>
+                                                <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                                                <strong>¡Error!</strong> Ya existe una cita para la fecha/hora seleccionadas.
+                                            </div>
+                                            </div>";
+                        }  
                     }
                 }
 }//Fin de boton Guardar

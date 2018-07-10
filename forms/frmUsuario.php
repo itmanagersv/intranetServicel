@@ -69,7 +69,8 @@ $interfaz->body();
                 </div>
                 <br>
                     <button type="submit" class="btn btn-primary btnGuardar" name="btnGuardar" <?=$desac?> onclick="return validate()">Guardar</button>
-                    <a href="../forms/tblUsuario.php" id="btnCancelar" class="btn btn-warning">Cancelar</a>    
+                    <a href="../forms/tblUsuario.php" id="btnCancelar" class="btn btn-warning">Cancelar</a>
+                    <input type="hidden" id="accion" name="accion" value="<?=$accion?>" >   
             </form>
         </div>
     </div><!--Fin row3-->

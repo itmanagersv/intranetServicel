@@ -355,6 +355,39 @@ switch($tabla){
     }
     break;
 
+    case 'tblmaterial':
+
+    $sqlMostrar ='SELECT m.idmaterial AS "Código", m.material AS "Material", m.stock AS "Stock" FROM tblmaterial m';
+    $rsMostrar = $bdConexion->ejecutarSql($sqlMostrar);
+
+    print '<script type="text/javascript" src="../js/listar.js"></script>
+              <table class="table table-condensed table-hover" id="lista"><thead>
+              <tr>
+                  <th>Material</th>
+                  <th>Stock</th>
+                  <th style="text-align: center;">Acciones</th>
+              </tr>
+           </thead><tbody>';
+
+    while($fila = mysqli_fetch_array($rsMostrar)){
+            print "
+            <tr>
+                <td>".$fila['Material']."</td>
+                <td>".$fila['Stock']."</td>
+                <td style='text-align:center;'>
+                    <a data-toggle='confirmation' data-title='¿Está seguro de modificar este registro?' data-btn-ok-label='Si'
+                    data-btn-ok-icon='fa fa-check' data-btn-ok-class='btn-success'
+                    data-btn-cancel-label='No' data-btn-cancel-icon='fa fa-close'
+                    data-btn-cancel-class='btn-danger' href='frmMaterial.php?accion=update&hCodigo=".$fila['Código']."&txtMaterial=".$fila['Material']."&txtStock=".$fila['Stock']."'>
+                    <button type='submit' class='btn btn-warning boton' id='btnModificar'>Modificar</button>
+                    </a>
+                </td>
+            </tr> ";  
+    }//Fin while
+    print "
+         </tbody></table>";
+    break;
+
     default:
         print "<div class='container'>
          <div class='alert alert-danger alert-dismissable'>
