@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-07-2018 a las 00:40:32
+-- Tiempo de generación: 11-07-2018 a las 22:20:44
 -- Versión del servidor: 10.1.31-MariaDB
 -- Versión de PHP: 7.2.4
 
@@ -51,7 +51,7 @@ CREATE TABLE `tblcita` (
   `fechasolicitud` date NOT NULL,
   `fechacita` date NOT NULL,
   `idhora` int(11) NOT NULL,
-  `comentarios` varchar(100) NOT NULL,
+  `comentarios` varchar(100) DEFAULT NULL,
   `idestado` int(11) NOT NULL,
   `visible` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -424,7 +424,7 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (47, 47, 9, 'tigo.santaana@servicelsv.net', '123', 1, 0),
 (48, 48, 3, 'kevin.elias@servicelsv.net', '123', 1, 0),
 (49, 49, 13, 'patricia.ponce@servicelsv.net', '123', 1, 0),
-(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 1),
+(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 0),
 (51, 51, 11, 'manuel.mata@servicelsv.net', '123', 1, 0),
 (52, 52, 2, 'recursoshumanos@servicelsv.net', '123', 1, 0),
 (53, 53, 3, 'maria.landaverde@servicelsv.net', '123', 1, 0),

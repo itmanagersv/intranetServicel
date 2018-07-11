@@ -297,6 +297,24 @@ class plantilla{
                                             </div><!--end size--> 
                                 
                                         </div><!--end class row-->
+
+                                        <br>
+
+                                        <div class="row">
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblMaterial.php">
+                                                        <button style="width:98%;" type="button" title="Mantenimiento suplementos" '.$disabled.'>
+                                                            <img src="img/svg/lapiz.svg">
+                                                                <br>
+                                                                <b>Mantenimiento suplementos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                        </div><!--end class row-->
                                         
                                     </div><!--end class card-body -->
                                 </div>
@@ -590,8 +608,20 @@ class plantilla{
                                                 </div><!--end class thumbnail-->
                                             </div><!--end size--> 
                                 
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="forms/tblMaterial.php">
+                                                        <button style="width:98%;" type="button" title="Mantenimiento suplementos" '.$disabled.'>
+                                                            <img src="img/svg/lapiz.svg">
+                                                                <br>
+                                                                <b>Mantenimiento suplementos</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
                                         </div><!--end class row-->
-                                        
+                                       
                                     </div><!--end class card-body -->
                                 </div>
                                 </div>

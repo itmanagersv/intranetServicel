@@ -111,6 +111,9 @@ class plantilla{
                                     <li>
                                         <a id="char" href="../forms/tblUsuario.php">Usuarios de sistema <span></span></a>
                                     </li>
+                                    <li>
+                                        <a id="char" href="../forms/tblMaterial.php">Materiales de oficina <span></span></a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -187,6 +190,9 @@ class plantilla{
                                             <a id="char" href="../forms/frmCita.php">Solicitud de cita con RRHH <span></span></a>
                                         </li>
                                         <li>
+                                            <a id="char" href="../forms/frmMaterial.php">Materiales de oficina <span></span></a>
+                                        </li>
+                                        <li>
                                             <a id="char" href="../forms/frmSolSup.php">Solicitud materiales <span></span></a>
                                         </li>
                                         <li>
@@ -208,6 +214,9 @@ class plantilla{
                                         </li>
                                         <li>
                                             <a id="char" href="../forms/tblBoleta.php">Resumen boletas de pago  <span></span></a>
+                                        </li>
+                                        <li>
+                                            <a id="char" href="../forms/tblMaterial.php">Materiales de oficina <span></span></a>
                                         </li>
                                     </ul>
                                 </li>
