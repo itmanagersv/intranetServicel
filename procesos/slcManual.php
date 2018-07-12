@@ -44,6 +44,11 @@ if (isset($_REQUEST['btnSeleccionar'])){
             </script>'; 
             break;
 
+        case '8':
+            echo '<script type="text/javascript" language="Javascript">window.open("https://drive.google.com/file/d/1W1RMi5b76tNxaDprbw0dCRMgoIsWFuhL/view?usp=sharing");
+            </script>'; 
+            break;
+
         default:
             break;
 

@@ -35,6 +35,7 @@ $interfaz->body();
 					    <option value="0">Selecccionar políticas a visualizar</option>
                         <option value="1">Politica bienvenida Servicel</option>
                         <option value="2">Politica de Inspección de Garantía</option>
+                        <option value="3">Politica de seguridad IT</option>
                     </select>
                 </div>
                 <br>

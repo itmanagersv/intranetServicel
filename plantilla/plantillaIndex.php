@@ -313,6 +313,18 @@ class plantilla{
                                                     </a>
                                                 </div><!--end class thumbnail-->
                                             </div><!--end size-->
+
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                <div class="thumbnail">
+                                                    <a href="pdf/manual/ManualIntranet.pdf" target="_blank">
+                                                        <button style="width:98%;" type="button" title="Ayuda" '.$disabled.'>
+                                                            <img src="img/svg/ayuda.svg">
+                                                                <br>
+                                                                <b>Ayuda</b>
+                                                        </button>
+                                                    </a>
+                                                </div><!--end class thumbnail-->
+                                            </div><!--end size-->
                                             
                                         </div><!--end class row-->
                                         
@@ -621,6 +633,24 @@ class plantilla{
                                             </div><!--end size-->
                                             
                                         </div><!--end class row-->
+
+                                        <br>
+
+                                        <div class="row">
+                                
+                                            <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="pdf/manual/ManualIntranet.pdf" target="_blank">
+                                                            <button style="width:98%;" type="button" title="Ayuda" '.$disabled.'>
+                                                                <img src="img/svg/ayuda.svg">
+                                                                    <br>
+                                                                    <b>Ayuda</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
+                                            </div><!--end size-->
+                                            
+                                        </div><!--end class row-->
                                        
                                     </div><!--end class card-body -->
                                 </div>
@@ -865,7 +895,19 @@ class plantilla{
                                                             </a>
                                                         </div><!--end class thumbnail-->
 
-                                                </div><!--end size--> 
+                                                </div><!--end size-->
+
+                                                <div class="col-sm-4 col-lg-3 col-md-3">
+                                                    <div class="thumbnail">
+                                                        <a href="pdf/manual/ManualIntranet.pdf" target="_blank">
+                                                            <button style="width:98%;" type="button" title="Ayuda" '.$disabled.'>
+                                                                <img src="img/svg/ayuda.svg">
+                                                                    <br>
+                                                                    <b>Ayuda</b>
+                                                            </button>
+                                                        </a>
+                                                    </div><!--end class thumbnail-->
+                                                </div><!--end size-->
                                                 
                                             </div><!--end class row-->
                                             

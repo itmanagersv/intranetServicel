@@ -307,6 +307,12 @@ class plantilla{
                                         <li>
                                             <a id="char" href="../forms/tblBoleta.php">Boletas de pago  <span></span></a>
                                         </li>
+                                        <li>
+                                            <a id="char" href="../forms/frmSlcPolitica.php">Políticas  <span></span></a>
+                                        </li>
+                                        <li>
+                                            <a id="char" href="../forms/frmSlcManual.php">Manuales  <span></span></a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>

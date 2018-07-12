@@ -40,7 +40,7 @@ $interfaz->body();
                         <option value="5">Proceso tecnico para etiquetar repuestos malos Samsung</option>
                         <option value="6">Glosario</option>
                         <option value="7">Manual de uso Scanner Barcode</option>
-                        
+                        <option value="8">Manual de uso de la intranet</option>
                     </select>
                 </div>
                 <br>
