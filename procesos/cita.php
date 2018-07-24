@@ -29,7 +29,7 @@ if (isset($_REQUEST['btnGuardar'])){
                         $fila = mysqli_fetch_array($rsMostrar);
                         $hora = $fila["idhora"];
                         $fecha = $fila["fechacita"];
-                        if(($hora != $slcHora) && ($fecha != $txtFechaCita)){
+                        if($hora != $slcHora || $fecha != $txtFechaCita){
                             $tabla      = "tblcita";
                             $campos     = "idpersona, fechasolicitud, fechacita, idhora, comentarios, idestado, visible";
                             $valores    = "$idPersona, '$txtFechaSol', '$txtFechaCita', '$slcHora', '$txtComentario', $txtestado, $txtvisible";
