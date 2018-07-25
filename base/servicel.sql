@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-07-2018 a las 22:20:44
--- Versión del servidor: 10.1.31-MariaDB
--- Versión de PHP: 7.2.4
+-- Tiempo de generación: 25-07-2018 a las 23:46:14
+-- Versión del servidor: 10.1.32-MariaDB
+-- Versión de PHP: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -55,6 +55,14 @@ CREATE TABLE `tblcita` (
   `idestado` int(11) NOT NULL,
   `visible` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tblcita`
+--
+
+INSERT INTO `tblcita` (`idcita`, `idpersona`, `fechasolicitud`, `fechacita`, `idhora`, `comentarios`, `idestado`, `visible`) VALUES
+(1, 74, '2018-07-19', '2018-07-31', 2, 'Pruebas 19-07-2018', 1, 1),
+(2, 65, '2018-07-19', '2018-07-20', 3, 'temas varios', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -122,7 +130,61 @@ CREATE TABLE `tblmaterial` (
 
 INSERT INTO `tblmaterial` (`idmaterial`, `material`, `stock`) VALUES
 (1, 'Papel bond', 5),
-(2, 'Engrapadora', 5);
+(2, 'Engrapadora', 5),
+(3, 'Almohadilla para Tinta', 2),
+(4, 'Archivador de Comprobante', 3),
+(5, 'Boligrafo de Color', 1),
+(6, 'Boligrafo Rojo', 0),
+(7, 'Borrador de Escobilla uso Taller', 12),
+(8, 'Borrador de Goma Blanco', 0),
+(9, 'Brocas Diferentes Tamaños para Concreto', 0),
+(10, 'Cartulina de Color', 0),
+(11, 'Cinta Ancha ', 25),
+(12, 'Cinta Doble Cara', 1),
+(13, 'Cinta Scoth Caja Roja', 15),
+(14, 'Clip Grandes', 1),
+(15, 'Clip Mariposa', 0),
+(16, 'Clip Medianos', 1),
+(17, 'Cuaderno Espiral', 2),
+(18, 'Cuchilla', 0),
+(19, 'Engrapadora de Metal', 0),
+(20, 'Fastener', 0),
+(21, 'Folder Tamaño Carta de Colores', 0),
+(22, 'Folder Tamaño Carta Simple', 0),
+(23, 'Franela para Uso Técnicos', 0),
+(24, 'Fundas para Ampos', 0),
+(25, 'Grapas', 2),
+(26, 'Hules', 10),
+(27, 'Lápiz', 0),
+(28, 'Lentes para Soldar Uso Técnicos', 0),
+(29, 'Naiz', 0),
+(30, 'Navajas Repuesto para Cuchillas', 0),
+(31, 'Order Book', 0),
+(32, 'Páginas de Color', 0),
+(33, 'Páginas Foami Color Azúl', 0),
+(34, 'Papel Bond Tamaño Carta para Impresor', 2),
+(35, 'Papel Bond Tamaño Oficio para Impresor', 0),
+(36, 'Papel Carbón', 0),
+(37, 'Papel China', 0),
+(38, 'Papel de Regalo Navideño', 0),
+(39, 'Papelera Acrílica 3 Niveles', 0),
+(40, 'Pega Instantánea Uso Taller', 3),
+(41, 'Pegamento en Barra', 0),
+(42, 'Plumón 90', 0),
+(43, 'Plumón Fluorescente', 0),
+(44, 'Post-it Grandes para Uso Técnicos y Logística', 3),
+(45, 'Regla de 30 Centímetros', 0),
+(46, 'Rodillo para Pintar', 0),
+(47, 'Rotuladores para Ampo', 0),
+(48, 'Sacagrapas', 0),
+(49, 'Sellos de RECIBIDO', 0),
+(50, 'Sobres Blancos Tamaño Oficio para Correspondencia', 0),
+(51, 'Tachuelas', 0),
+(52, 'Tijeras', 1),
+(53, 'Tinta para Almohadilla Color Rojo', 0),
+(54, 'Tinta para Almohadilla Color Azúl', 2),
+(55, 'Tirro', 2),
+(56, 'Viñetas Marcador de Precios', 0);
 
 -- --------------------------------------------------------
 
@@ -287,6 +349,13 @@ CREATE TABLE `tblsolicitud` (
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `tblsolicitud`
+--
+
+INSERT INTO `tblsolicitud` (`idsolicitud`, `idpersona`, `idtipo`, `fecha`, `comentario`, `idmotivo`, `estado`) VALUES
+(1, 74, 3, '2018-07-19', 'Pruebas 19-07-2018', 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -378,12 +447,12 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (1, 1, 3, 'tecnico05@servicelsv.net', '123', 1, 0),
 (2, 2, 3, 'tecnico03@servicelsv.net', '123', 1, 0),
 (3, 3, 3, 'anibal.rivas@servicelsv.net', '123', 1, 0),
-(4, 4, 3, 'aristides.monterroza@servicelsv.net', '123', 1, 0),
+(4, 4, 3, 'aristides.monterroza@servicelsv.net', 'servicel2018', 1, 1),
 (5, 5, 3, 'dennis.cortez@servicelsv.net', '123', 1, 0),
 (6, 6, 8, 'carlos.benavides@servicelsv.net', '123', 1, 0),
 (7, 7, 5, 'carlos.barrera@servicelsv.net', '123', 1, 0),
 (8, 8, 3, 'cesar.valladares@servicelsv.net', '123', 1, 0),
-(9, 9, 4, 'supervisor02@servicelsv.net', '123', 1, 0),
+(9, 9, 4, 'supervisor02@servicelsv.net', '1978', 1, 1),
 (10, 10, 5, 'cesar.hidalgo@servicelsv.net', '123', 1, 0),
 (11, 11, 7, 'conta.aux@servicelsv.net', '123', 1, 0),
 (12, 12, 3, 'taller.olimpica01@servicelsv.net', '123', 1, 0),
@@ -410,7 +479,7 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (33, 33, 8, 'jonathan.garcia@servicelsv.net', '123', 1, 0),
 (34, 34, 3, 'no tiene', '123', 1, 0),
 (35, 35, 11, 'jorge.mayorga@servicelsv.net', '123', 1, 0),
-(36, 36, 1, 'soporte@servicelsv.net', '123', 1, 0),
+(36, 36, 1, 'soporte@servicelsv.net', 'Galvez1989', 1, 1),
 (37, 37, 5, 'supervisor01@servicelsv.net', '123', 1, 0),
 (38, 38, 3, 'control.calidad02@servicelsv.net', '123', 1, 0),
 (39, 39, 3, 'no tiene', '123', 1, 0),
@@ -424,11 +493,11 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (47, 47, 9, 'tigo.santaana@servicelsv.net', '123', 1, 0),
 (48, 48, 3, 'kevin.elias@servicelsv.net', '123', 1, 0),
 (49, 49, 13, 'patricia.ponce@servicelsv.net', '123', 1, 0),
-(50, 50, 1, 'soporte2@servicelsv.net', '123', 1, 0),
+(50, 50, 1, 'soporte2@servicelsv.net', 'Guill3rmo$', 1, 1),
 (51, 51, 11, 'manuel.mata@servicelsv.net', '123', 1, 0),
 (52, 52, 2, 'recursoshumanos@servicelsv.net', '123', 1, 0),
 (53, 53, 3, 'maria.landaverde@servicelsv.net', '123', 1, 0),
-(54, 54, 6, 'gerencia.operaciones@servicelsv.net', '123', 1, 0),
+(54, 54, 6, 'gerencia.operaciones@servicelsv.net', '1995', 1, 1),
 (55, 55, 3, 'marlon.alvarenga@servicelsv.net', '123', 1, 0),
 (56, 56, 5, 'mercedes.gongora@servicelsv.net', '123', 1, 0),
 (57, 57, 3, 'miguel.cabrera@servicelsv.net', '123', 1, 0),
@@ -439,7 +508,7 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (62, 62, 3, 'oscar.alexander@servicelsv.net', '123', 1, 0),
 (63, 63, 3, 'oscar.merino@servicelsv.net', '123', 1, 0),
 (64, 64, 3, 'oscar.maldonado@servicelsv.net', '123', 1, 0),
-(65, 65, 4, 'jefatura.qc@servicelsv.net', '123', 1, 0),
+(65, 65, 4, 'jefatura.qc@servicelsv.net', 'Olopez2017', 1, 1),
 (66, 66, 3, 'no tiene', '123', 1, 0),
 (67, 67, 3, 'control.calidad01@servicelsv.net', '123', 1, 0),
 (68, 68, 3, 'tigo.lagranvia@servicelsv.net', '123', 1, 0),
@@ -448,7 +517,7 @@ INSERT INTO `tblusuario` (`idusuario`, `idpersona`, `idtipo`, `user`, `pass`, `a
 (71, 71, 3, 'raul.garcia@servicelsv.net', '123', 1, 0),
 (72, 72, 6, 'reyna.alvarado@servicelsv.net', '123', 1, 0),
 (73, 73, 3, 'saul.barrera@servicelsv.net', '123', 1, 0),
-(74, 74, 4, 'simeon.vasquez@servicelsv.net', '123', 1, 0),
+(74, 74, 4, 'simeon.vasquez@servicelsv.net', 'S3rv1c3l', 1, 1),
 (75, 75, 3, 'vanessa.ruiz@servicelsv.net', '123', 1, 0),
 (76, 76, 8, 'jefatura.inv@servicelsv.net', '123', 1, 0),
 (77, 77, 9, 'walter.asencio@servicelsv.net', '123', 1, 0),
@@ -564,7 +633,7 @@ ALTER TABLE `tblboleta`
 -- AUTO_INCREMENT de la tabla `tblcita`
 --
 ALTER TABLE `tblcita`
-  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idcita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `tblestado`
@@ -582,7 +651,7 @@ ALTER TABLE `tblhora`
 -- AUTO_INCREMENT de la tabla `tblmaterial`
 --
 ALTER TABLE `tblmaterial`
-  MODIFY `idmaterial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idmaterial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT de la tabla `tblmes`
@@ -606,7 +675,7 @@ ALTER TABLE `tblpersona`
 -- AUTO_INCREMENT de la tabla `tblsolicitud`
 --
 ALTER TABLE `tblsolicitud`
-  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idsolicitud` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `tblsolsuplemento`
